@@ -1,0 +1,18 @@
+# data
+gdb/California/xxxx*/
+gdb/California/20*/
+lapse/*.pdf
+#emacs
+*~
+\#*\#
+
+# LaTEX
+*.aux
+*.blg
+*.dvi
+*.fff
+*.lof
+*.log
+*.lot
+*.ttf
+*.ttt

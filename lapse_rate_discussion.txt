@@ -1,0 +1,58 @@
+
+\section{AUG 2004}
+
+Sometime around August, 2004 we redid the previous datasets with 
+a new set of lapse rates for \ac{Tx},\ac{Tn}, and \ac{dewp}.
+
+\begin{table}[htbp]
+  \hrule\vspace*{2pt}
+  \centering
+  \caption{
+%
+    Lapse rate estimates for temperature interpolations change for different 
+daily temperatures under the assumption that the relative humidity, which 
+decrease the lapse rate also changes throughout the day.
+%
+}
+  \begin{tabular}{l|c}
+    Temperature & Lapse Rate (\unitfrac{\ensuremath{^\circ}C}{km}) \\
+    \hline \hline
+    \acs{dewp} & 6 \\
+    \acs{Tn} & 6.5 \\
+    \acs{Tx} & 7.5
+  \end{tabular}
+  \label{tab:lapse}
+\end{table}
+ 
+This is how I came up with these values: I used the typically 
+cited value of 6.5 C / km, for the Environmental Lapse Rate : 
+(ELR), as a starting point.  But since that varies widely, I 
+also took into account the Saturated Adiabatic Lapse Rate 
+(SALR) ~ 6 C /km , and the DALR (10C/km).  I figured that at 
+the Max AT, the humidity is lowerer, and air is moving more, 
+so the lapse rate is somewhere between the ELR and DALR, 
+which is why I choose 7.5C/km.  Then I used the SALR for the 
+dew point temp.
+ 
+Most examples I found from other sources, typically used the 
+SALR, or assumed a moving mass of air and used the DALR up to 
+dew point and SALR beyond that.  
+ 
+I did find one example,
+https://www.metocwx.quantico.usmc.mil/metoc_resource_center/qmmph1/Tmis/QMMPH1-019%20Lapse%20Rates.pdf,
+
+
+However that said something different regarding dew point; 
+"b. As a rule of thumb, the dew point decreases approximately 
+2C per 1000 meters."  Although I have noted that still air 
+lapse rates are less then the adiabatic,  I can't see why dew 
+point would change so slowly.
+ 
+Some Interesting Online tutorials:
+ 
+http://www.uwsp.edu/geo/faculty/ritter/geog101/textbook/atmospheric_moisture/lapse_rates_1.html
+ 
+http://atschool.eduweb.co.uk/kingworc/departments/geography/nottingham/atmosphere/pages/lapseratesalevel.html
+ 
+ 
+ 

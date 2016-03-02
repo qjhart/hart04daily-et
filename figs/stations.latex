@@ -1,0 +1,35 @@
+\setlength{\unitlength}{4144sp}%
+%
+\begingroup\makeatletter\ifx\SetFigFont\undefined%
+\gdef\SetFigFont#1#2#3#4#5{%
+  \reset@font\fontsize{#1}{#2pt}%
+  \fontfamily{#3}\fontseries{#4}\fontshape{#5}%
+  \selectfont}%
+\fi\endgroup%
+\begin{picture}(8509,6668)(46,-6414)
+\thinlines
+{\color[rgb]{0,0,0}\put( 46,254){\line( 1, 0){8509}}
+\put(8555,254){\line( 0,-1){6668}}
+\put(8555,-6414){\line(-1, 0){8509}}
+\put( 46,-6414){\line( 0, 1){6668}}
+}%
+{\color[rgb]{0,0,0}\put(5356,-511){\line( 1, 0){1755}}
+\put(7111,-511){\line( 0,-1){1710}}
+\put(7111,-2221){\line(-1, 0){1755}}
+\put(5356,-2221){\line( 0, 1){1710}}
+}%
+{\color[rgb]{0,0,0}\put(6256,-1501){\framebox(225,270){}}
+}%
+{\color[rgb]{0,0,0}\put(3151,-2446){\framebox(540,315){}}
+}%
+{\color[rgb]{0,0,0}\put(4051,-4606){\framebox(585,315){}}
+}%
+{\color[rgb]{0,0,0}\put(4636,-5371){\framebox(540,405){}}
+}%
+\put(3331,-2041){\makebox(0,0)[lb]{\smash{{\SetFigFont{12}{14.4}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}Sacramento}%
+}}}}
+\put(4231,-4156){\makebox(0,0)[lb]{\smash{{\SetFigFont{12}{14.4}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}South Valley}%
+}}}}
+\put(4951,-4831){\makebox(0,0)[lb]{\smash{{\SetFigFont{12}{14.4}{\familydefault}{\mddefault}{\updefault}{\color[rgb]{0,0,0}South Coast}%
+}}}}
+\end{picture}%

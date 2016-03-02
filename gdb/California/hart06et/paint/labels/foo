@@ -1,0 +1,4879 @@
+east: -7401.639344
+north: 441000.000000
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -244975.752536
+north: 439236.430357
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -184804.319396
+north: 430961.882412
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -180767.066247
+north: 426650.075650
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -183557.275929
+north: 424539.525991
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -177958.061498
+north: 421357.467326
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -182200.531059
+north: 412504.340513
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -21427.893273
+north: 394597.329427
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -268726.982081
+north: 405103.821827
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -184865.154444
+north: 405072.353306
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -266260.199259
+north: 403112.709910
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -262970.492461
+north: 402996.607176
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -252978.003935
+north: 402835.080519
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -128214.570807
+north: 393837.921422
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -272960.484275
+north: 400921.825864
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -256918.914750
+north: 397877.689991
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -176493.443425
+north: 400934.034439
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -266959.624464
+north: 399059.118935
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -139207.237642
+north: 396990.084438
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -162328.238493
+north: 391862.524688
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -144559.526406
+north: 392907.988743
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -174611.753673
+north: 389302.235744
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16837.282373
+north: 393011.184053
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -258122.007681
+north: 391161.426016
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -19007.741514
+north: 384499.750274
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -254946.065791
+north: 389459.525242
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -167722.067768
+north: 389015.604613
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -160964.936397
+north: 389109.477660
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -249653.171937
+north: 386924.454511
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -160216.511197
+north: 385012.581851
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -178958.161630
+north: 372963.479376
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -169447.824950
+north: 382577.080739
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -264820.735298
+north: 382774.054753
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -252251.842358
+north: 380962.449787
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16310.556177
+north: 338455.676423
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -214945.687478
+north: 369855.040157
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -247683.597410
+north: 362630.463620
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -205267.089319
+north: 366487.352628
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -235554.324000
+north: 354041.577020
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -68614.800139
+north: 362999.593050
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -247465.333445
+north: 350716.078785
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -64902.654274
+north: 361134.436445
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -247368.321719
+north: 357004.863531
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -226736.835782
+north: 357078.216254
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -206804.124399
+north: 356809.968439
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -202667.802727
+north: 356593.830656
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -46767.915558
+north: 347898.515469
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -36948.483192
+north: 345688.266664
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -246920.050522
+north: 344996.364661
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -254848.471313
+north: 331893.420152
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -218996.341803
+north: 345011.478732
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -2291.864816
+north: 342337.322241
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -42599.070221
+north: 341142.714308
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -234696.909161
+north: 334991.648902
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -19991.062081
+north: 335249.916793
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -240187.742464
+north: 326239.065339
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -35180.154957
+north: 323808.698029
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -270718.647724
+north: 326877.181709
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -60901.906132
+north: 330970.592125
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -3707.408295
+north: 322919.967061
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -54900.981689
+north: 326996.086893
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -250969.594736
+north: 324986.028212
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -250900.751495
+north: 315145.136224
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -70351.726643
+north: 311158.707672
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -136335.200039
+north: 311127.225134
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -98493.640540
+north: 306256.005185
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -150973.729351
+north: 306965.298641
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -34950.473453
+north: 306858.412112
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -11570.669686
+north: 306736.299331
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -83351.978858
+north: 302902.499611
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -48709.730452
+north: 294214.806342
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -134145.924292
+north: 295999.176531
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -46920.964378
+north: 303026.342504
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -17385.170669
+north: 302626.166669
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16034.566850
+north: 296668.560096
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -86485.108240
+north: 289092.741739
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -76641.787833
+north: 292670.715529
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -71940.265083
+north: 290986.586975
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -75137.188286
+north: 283816.526706
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -110868.278391
+north: 283582.859818
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -126682.885944
+north: 266767.259607
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -95323.224042
+north: 285258.093566
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -118830.971030
+north: 284772.635132
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -130458.145834
+north: 283000.927943
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -80895.902582
+north: 282992.986307
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -60561.611855
+north: 278923.250051
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -122596.426469
+north: 280703.139171
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -92472.091766
+north: 278543.707638
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -58717.495926
+north: 277623.392447
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -64370.766313
+north: 272776.275633
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -56745.877924
+north: 274999.542582
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -134991.045599
+north: 263013.804658
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -6108.446145
+north: 261088.421252
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -72603.952872
+north: 256935.566162
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -68217.967179
+north: 250382.060731
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -49909.615252
+north: 250235.853074
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -44941.584666
+north: 248830.642429
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -253908.181761
+north: 246977.813032
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -116557.330588
+north: 242991.141587
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -81051.846498
+north: 245080.037386
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -248677.491705
+north: 245313.739265
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -60471.974737
+north: 234823.857074
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -116112.291345
+north: 234733.482679
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -252977.521081
+north: 232966.448618
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -56796.551491
+north: 232575.835840
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -23892.257004
+north: 232848.105435
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -250419.705513
+north: 225216.486027
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -246569.549530
+north: 228874.960228
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -240886.604643
+north: 227567.071391
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -50934.556749
+north: 229009.920259
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -116804.028091
+north: 226876.962476
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -74868.502593
+north: 226295.855042
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -32852.625507
+north: 226917.529975
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16740.399208
+north: 226780.747403
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -21983.092420
+north: 211825.699430
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -120243.397897
+north: 223743.477372
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -116970.935261
+north: 222971.467334
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -60750.470651
+north: 214427.533425
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -1367.932712
+north: 223223.516923
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -50456.976308
+north: 215613.547555
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -14657.235233
+north: 220891.645051
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -5906.314240
+north: 209413.324065
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -102812.920252
+north: 217129.457830
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -98394.408148
+north: 216736.170401
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -104461.748344
+north: 214992.385626
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -30937.156430
+north: 214681.487013
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -96457.580783
+north: 212924.739937
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -57530.823205
+north: 212786.445853
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -28431.258145
+north: 213028.562773
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -53054.935295
+north: 210844.421819
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -36499.271813
+north: 208457.542175
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -48971.450951
+north: 208128.392395
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -24274.306444
+north: 204858.571104
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -78388.864872
+north: 207100.115524
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -48968.601976
+north: 203794.470142
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -52279.889924
+north: 203010.493728
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -50767.207663
+north: 201597.099683
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -72703.816472
+north: 195879.096976
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -64721.336883
+north: 199381.766057
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -63698.400376
+north: 188807.226561
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -244296.904919
+north: 192959.751555
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -70270.077832
+north: 192885.059946
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -73000.000000
+north: 191000.000000
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 146905.939079
+north: -101511.534847
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -17228.630350
+north: 164192.858697
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -66570.159152
+north: 184770.542292
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -54307.421091
+north: 185165.357180
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -70929.578482
+north: 183053.273555
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16949.451300
+north: 173473.953022
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -250888.531670
+north: 171099.048070
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -55184.207566
+north: 169000.100318
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -51400.177011
+north: 168995.585372
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -4632.351210
+north: 166276.910726
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -14971.321056
+north: 166982.920255
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -236247.540274
+north: 155039.925094
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -2636.162005
+north: 153169.116916
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -21646.262374
+north: 152727.887791
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -50790.282553
+north: 141003.354663
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -22465.528983
+north: 141007.587526
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -48758.187480
+north: 138529.803228
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 5170.184539
+north: 100237.781804
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -18397.027629
+north: 130208.996769
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -44874.575787
+north: 129008.400548
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -41738.224884
+north: 126786.760686
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -16428.379225
+north: 120997.196836
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 29000.000000
+north: 82214.285714
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 13484.493388
+north: 83001.927335
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 31317.805032
+north: 79001.705195
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -20965.218865
+north: 74496.141364
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 49829.174923
+north: 61307.249559
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 21330.674264
+north: 65008.668158
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 30162.901428
+north: 65117.549865
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 33730.721284
+north: 60720.724052
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 3475.207156
+north: 60975.226427
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -18899.777580
+north: 56998.771404
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 49178.171924
+north: 48068.347402
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 17207.622379
+north: 44963.868650
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 49084.854567
+north: 45753.516864
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 75000.000000
+north: 42750.663130
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 5197.712347
+north: 43062.834341
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 20718.616835
+north: 42518.232402
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 18623.824209
+north: 41029.043294
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 71345.910799
+north: 39055.228846
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 20112.521027
+north: 35057.920478
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 23566.482303
+north: 32904.739589
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 64720.710780
+north: 20266.271789
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 3000.000000
+north: 15000.000000
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 89367.285621
+north: -8940.729974
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 23359.618503
+north: 4978.410712
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 7180.235856
+north: 2692.515744
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 85379.310345
+north: 1000.000000
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 125108.506665
+north: -16752.900291
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 23108.680220
+north: -10126.794170
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 165000.000000
+north: -38667.796610
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 45004.372295
+north: -25000.086579
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 135078.740712
+north: -27809.295777
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 186102.392958
+north: -64794.047565
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 198017.958803
+north: -67906.459990
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 84149.008463
+north: -72826.725602
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 207000.000000
+north: -73715.736041
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 207098.875879
+north: -82042.906440
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 53033.152431
+north: -82123.638684
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 185039.693917
+north: -95016.877150
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 93111.263631
+north: -111984.482081
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 216142.114518
+north: -109333.959064
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 249000.000000
+north: -112091.891892
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 125206.034640
+north: -113109.584420
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 217532.148235
+north: -125545.325530
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 123413.954988
+north: -115128.165990
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 256648.208469
+north: -117000.000000
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 122027.145663
+north: -116944.883777
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 231165.307423
+north: -134756.375021
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 261000.000000
+north: -121209.183673
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 233080.914630
+north: -128698.557293
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 91269.759646
+north: -135002.612335
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 185259.846129
+north: -136879.531028
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 125153.237737
+north: -139026.430611
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 109051.676480
+north: -139825.073597
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 97007.393613
+north: -148090.575532
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 225030.285528
+north: -155094.650072
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 226682.598238
+north: -162225.538669
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 213419.742079
+north: -161149.693607
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 217163.414929
+north: -163046.097244
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 240806.645857
+north: -173977.844306
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 251846.321696
+north: -180472.589641
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 143031.756758
+north: -179964.639666
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 263205.748062
+north: -183616.775382
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 260989.105273
+north: -216035.321399
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 205405.700727
+north: -207192.558555
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 145110.703600
+north: -194408.837518
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 229914.851203
+north: -214747.571499
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 141066.095681
+north: -205005.338371
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 119108.836230
+north: -210896.919112
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 221128.896666
+north: -213161.221960
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 222064.055326
+north: -219053.431612
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 264974.763995
+north: -221655.379965
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 225696.926656
+north: -229209.093921
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 261314.055278
+north: -229442.370957
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 127889.998521
+north: -230649.072842
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 130644.385007
+north: -245933.914604
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 167103.918000
+north: -246621.550620
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 373051.345173
+north: -244988.561942
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 183247.641806
+north: -256607.130876
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 131127.054743
+north: -255344.077533
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 171775.175554
+north: -259235.261208
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 129033.754105
+north: -259050.581310
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 175563.840197
+north: -263461.432784
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 171235.861198
+north: -265038.095303
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 402123.179434
+north: -267590.485675
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 171057.129274
+north: -270920.268103
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 152087.022336
+north: -289131.810091
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 129455.512119
+north: -284987.823290
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 427291.948293
+north: -297150.954591
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 133114.770833
+north: -328982.061107
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 141145.300706
+north: -331108.560197
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 77945.842239
+north: -349009.506538
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 87047.378886
+north: -349393.481973
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 84391.622589
+north: -356967.674435
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 93390.712536
+north: -352561.009947
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 96730.014420
+north: -360332.934363
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 33353.461469
+north: -369000.282484
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 98056.828695
+north: -373147.830163
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 67532.975864
+north: -375151.347547
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 72524.420681
+north: -376956.297792
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 81152.843306
+north: -378987.443185
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 181286.490561
+north: -401021.793470
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 194227.174554
+north: -406468.126869
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 202587.155648
+north: -408918.383537
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 225405.796854
+north: -418763.526149
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 289939.071521
+north: -435483.168140
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 205118.896985
+north: -405390.655071
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 223137.421511
+north: -404929.359411
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 312216.610241
+north: -467225.428120
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 313613.550824
+north: -470964.958372
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 319321.850576
+north: -478810.606809
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 309351.262962
+north: -482995.029906
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: 337268.528654
+north: -494491.119495
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 2000.000000
+
+east: -182695.611702
+north: 378972.693146
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 147445.261193
+north: -25030.075766
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 155351.165394
+north: -41404.240665
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 113230.339268
+north: -66979.705347
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 133300.196681
+north: -100966.751172
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 141145.591558
+north: -105033.605942
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 151292.649159
+north: -152503.662455
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 153628.382872
+north: -159117.173560
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 155103.226061
+north: -160985.611575
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+
+east: 157383.770576
+north: -165002.111106
+xoffset: 0
+yoffset: 0
+ref: center
+font: standard
+color: black
+size: 100
+width: 1
+hcolor: none
+hwidth: 0
+background: none
+border: none
+opaque: yes
+
+text: 4000.000000
+

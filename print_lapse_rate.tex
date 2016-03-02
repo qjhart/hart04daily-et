@@ -1,0 +1,89 @@
+\documentclass{elsart}
+
+\usepackage{color}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{pgf,pgfarrows,pgfshade}
+\usepackage{subfigure}
+\usepackage{units}
+\usepackage{amsmath}
+\input{../cimis_acronyms}
+
+\begin{document}
+%
+\begin{frontmatter}
+\title{Title}  
+%
+\author[calspace]{Quinn~Hart}
+
+\address[calspace]{CalSpace \\
+University of California, Davis\\
+Davis, CA, USA \\
+{qjhart,carueda,slustin}@ucdavis.edu}
+
+\end{frontmatter}                                
+
+% This format puts a special copyright style on the first page
+\thispagestyle{plain}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_max_at}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_min_at} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_dewp}
+
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_max_at}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_min_at} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_dewp}
+
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_max_at}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_min_at} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_dewp}
+
+  \caption{Average lapse rates}
+  \label{fig:lapse_rate}
+\end{figure}
+
+\begin{table}
+  \centering
+  \caption{Average monthly surface temperature lapse rate measurements $[\unitfrac{\ensuremath{^\circ}C}{km}]$ for various California transects.
+  }
+\begin{tabular}{c | c c c | c c c | c c c }
+& \multicolumn{3}{c|}{South Coast} & \multicolumn{3}{c|}{South Valley} & \multicolumn{3}{c}{Sacramento} \\
+\raisebox{1.5ex}{Month} & \acs{Tx} & \acs{Tn} & \acs{dewp} & \acs{Tx} & \acs{Tn}  &\acs{dewp} & \acs{Tx} & \acs{Tn} & \acs{dewp} \\ \hline \hline
+\input{lapse_rate.tex}
+\end{tabular}
+\label{tab:lapse_rate}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_max_at_K}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_min_at_K} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/sacramento_dewp_K}
+
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_max_at_K}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_min_at_K} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southcoast_dewp_K}
+
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_max_at_K}
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_min_at_K} 
+  \includegraphics[width=0.3\textwidth]{lapse_rate/southvalley_dewp_K}
+
+  \caption{Average lapse rates (Clear sky $\acs{K} > 0.85$}
+  \label{fig:lapse_rate}
+\end{figure}
+
+\begin{table}
+  \centering
+  \caption{Average monthly surface temperature lapse rate measurements $[\unitfrac{\ensuremath{^\circ}C}{km}]$ for various California transects.  Clear Skies only, $\acs{K} > 0.85$
+  }
+\begin{tabular}{c | c c c | c c c | c c c }
+& \multicolumn{3}{c|}{South Coast} & \multicolumn{3}{c|}{South Valley} & \multicolumn{3}{c}{Sacramento} \\
+\raisebox{1.5ex}{Month} & \acs{Tx} & \acs{Tn} & \acs{dewp} & \acs{Tx} & \acs{Tn}  &\acs{dewp} & \acs{Tx} & \acs{Tn} & \acs{dewp} \\ \hline \hline
+\input{lapse_rate_K.tex}
+\end{tabular}
+\label{tab:lapse_rate}
+\end{table}
+
+\end{document}

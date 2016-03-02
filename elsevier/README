@@ -1,0 +1,15 @@
+I did my best to follow both the guidelines for latex publications in
+the latex class file and the guidelines described in the submission
+process.  
+
+The biggest problem I had was regarding figures, since they are
+typically combinations of images and tex file overlays for more
+consistant fonts within the document.  I have left the original figure
+definitions embedded in the latex file, but by default they are not
+used, and I have instead included standalone pdfs for all figuures and
+tables, as expected by the submission process.  In addition, I have
+included captions in the document, but not on the figures themselves.
+
+I hope this is acceptable, let me know if there is a better way to
+format this document for submission.
+

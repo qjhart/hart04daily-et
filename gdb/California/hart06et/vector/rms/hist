@@ -1,0 +1,3 @@
+COMMAND: v.in.ascii input="sr.dat" output="rms" format="point" fs="|" columns="cat int, x double, y double, rms double" x=2 y=3 z=0 cat=1
+GISDBASE: /home/quinn/projects/cimis/doc/hart06et/gdb
+LOCATION: California MAPSET: hart06et USER: quinn DATE: Mon Apr  3 00:41:04 2006

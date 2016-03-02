@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.06pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Evapotranspiration Overview}{1}{0}{1}
+\beamer@sectionintoc {2}{Net Radiation}{8}{0}{2}
+\beamer@sectionintoc {3}{Parameter Interpolation}{19}{0}{3}
+\beamer@sectionintoc {4}{Summary}{26}{0}{4}

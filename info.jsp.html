@@ -1,0 +1,714 @@
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+<link rel="stylesheet" href="default.css" type="text/css">
+
+
+
+<html>
+
+        <head>
+                <META name="title" content="CIMIS - [
+		Info Center
+	]"/> <!-- mandatory -->
+                <meta name="Title" content="Department of Water Resources - CIMIS Homepage">
+                <meta name="Title" content="DWR - CIMIS Homepage">
+                <meta name="Title" content="CIMIS Homepage">
+                <meta name="Title" content="California Irrigation Management Information System Homepage">
+                <meta name="Title" content="California Irrigation Management Information System">
+
+                <meta name="Creator" content="The State of California Department of Water Resources">
+                <meta name="Creator" content="Contrator: Carlos Oretega, DWR: DTS Staff, and OWUE Staff">
+                <meta name="Creator" content="Carlos Ortega, Kent Frame, Bekele Temesgen, Don Hatch">
+
+                <meta name="Description" content="Calculation of Evapotranspiration (ETo) from sensor readings at over 100 weather stations throughout California.">
+
+                <meta name="Portal Category" content="Environmental and Natural Resources">
+                <meta name="Language" content="English">
+                <meta name="Date" content="2003-11-15">
+
+                <meta name="Subject" content="irrigation management; dew point; evapotranspiration">
+
+                <meta name="Keywords" content="weather stations; ETo; relative humidity; soil temperature">
+                <meta name="Keywords" content="weather on the web; cimis; solar radiation; net radiation">
+                <meta name="Keywords" content="cimis contacts; irrigation consultants">
+
+                <meta name="Department" content="Department of Water Resources">
+
+                <meta name="Type" content="Text; data; image">
+                <meta name="Format" content="Text/HTML; XML">
+
+                <meta name="Coverage" content="CAlifornia">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<title>CIMIS - [
+		Info Center
+	]</title>
+
+                <style>
+                .menulines{
+                border:1px solid #EFEFF5;
+                }
+
+                .menulines a{
+                text-decoration:none;
+                color:black;
+                }
+                </style>
+
+                <script language="JavaScript1.2">
+                <!--
+                var MENU_BORDER_COLOR		= '#999999'
+                var MENU_MOUSEOVER_COLOR	= '#cccccc'
+                var MENU_CURRENTPAGE_COLOR	= '#EFEFF5'
+
+                ie4 = ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4 ));
+
+                function showHide(el, checkValue)
+                {
+                    if(checkValue.checked) {
+                        el.style.visibility = "visible";
+                        el.style.display = ""
+                    }
+                    else {
+                        el.style.visibility = "hidden";
+                        el.style.display = "none";
+                    }
+                }
+
+                function hideShow(el, checkValue)
+                {
+                    if(checkValue.checked) {
+                        el.style.visibility = "hidden";
+                        el.style.display = "none";
+                    }
+                    else {
+                        el.style.visibility = "visible";
+                        el.style.display = ""
+                    }
+                }
+
+                /*
+                Highlight menu effect script: By Dynamicdrive.com
+                For full source, Terms of service, and 100s DTHML scripts
+                Visit http://www.dynamicdrive.com
+                */
+
+                function borderize(what,bcolor,bkcolor){
+                what.style.borderColor=bcolor
+                what.style.backgroundColor=bkcolor
+                }
+
+                function borderize_on(e){
+                if (document.all)
+                source3=event.srcElement
+                else if (document.getElementById)
+                source3=e.target
+                if (source3.className=="menulines"){
+                borderize(source3, MENU_BORDER_COLOR, MENU_MOUSEOVER_COLOR)
+                }
+                else{
+                while(source3.tagName!="TABLE"){
+                source3=document.getElementById? source3.parentNode : source3.parentElement
+                if (source3.className=="menulines")
+                borderize(source3, MENU_BORDER_COLOR, MENU_MOUSEOVER_COLOR)
+                }
+                }
+                }
+
+                function borderize_off(e){
+                if (document.all)
+                source4=event.srcElement
+                else if (document.getElementById)
+                source4=e.target
+                if (source4.className=="menulines")
+                borderize(source4, MENU_CURRENTPAGE_COLOR, MENU_CURRENTPAGE_COLOR)
+                else{
+                while(source4.tagName!="TABLE"){
+                source4=document.getElementById? source4.parentNode : source4.parentElement
+                if (source4.className=="menulines")
+                borderize(source4, MENU_CURRENTPAGE_COLOR, MENU_CURRENTPAGE_COLOR)
+                }
+                }
+                }
+                //-->
+                </script>
+	</head>
+<body>
+<table align="center" width="740" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="740" colspan="5">
+
+
+
+<map name="tabFolder"> 
+  <area shape="rect" coords="7,0,77,29" 
+	href="welcome.jsp" alt="Welcome" />
+  <area shape="rect" coords="78,0,147,29"
+	href="info.jsp" alt="Information Center" />
+  <area shape="rect" coords="148,0,215,29" 
+	href="data.jsp" alt="Data"/>
+  <area shape="rect" coords="216,0,290,29" 
+	href="resource.jsp" alt="Resource Center"/>
+  <area shape="rect" coords="291,0,362,29" 
+	href="myCimis.jsp" alt="My CIMIS"/>
+  <!--area shape="rect" coords="577,0,740,13" 
+	href="http://www.water.ca.gov"  target="mm_window" alt="Department of Water Resources"/-->
+  <!--area shape="rect" coords="577,14,740,25" 
+	href="http://www.owue.water.ca.gov"  target="mm_window" alt="Office of Water Use Efficiency"/-->
+</map>
+<!--=========================================================================-->
+<!--                               Set Header                                -->
+<!--=========================================================================-->
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="740">
+  <tr> 
+    <td align="right"><img src="images/en_cali_logo.gif" BORDER="0" HEIGHT="23" WIDTH="740" usemap="#Map" alt="California - The Golden State"></TD>
+  </tr>
+</table>
+<table align="center" width="740" cellspacing="0" cellpadding="0">
+  <tr bgcolor="7FB2D1"> 
+    <td colspan="3"> <img src="images/en_cimis_banner.gif" width="740" height="96" border="0"></td>
+  </tr>
+  <tr> 
+    <td colspan="3"> <img src="images/en_tf_learning_center.gif" width="740" 
+    height="29" usemap="#tabFolder" border="0"></td>
+  </tr>
+  <tr> 
+    <td width="1" height="1" bgcolor="#BFB7B1" valign="top"/> 
+    <td width="668" bgcolor="#003399" valign="top">&nbsp;</td>
+    <td width="1" height="1" bgcolor="#BFB7B1" valign="top"/> 
+  </tr>
+</table>
+<map name="Map"> 
+  <area shape="rect" coords="609,1,665,23" href="http://www.ca.gov" target="mm_window" alt="California Home Page" title="California Home Page">
+  <area shape="rect" coords="676,1,747,23" href="http://www.governor.ca.gov" target="mm_window" alt="Governor's Home Page" title="Governor's Home Page">
+</map>
+</td>
+	</tr>
+	<tr valign="top">
+		<td width="1" bgcolor="#BFB7B1"><img height="1" width="1" src="images/blank.gif"></td>
+		<td width="150" bgcolor="#EFEFF5">
+
+
+
+<table width="150" border="0" cellspacing="0" cellpadding="0" onMouseover="borderize_on(event)" onMouseout="borderize_off(event)">
+    <tr>
+        <td class="menulinesHeading">
+            General
+        </td>
+    </tr>
+
+    
+    
+        <tr>
+            <td class="menulines" onclick="cimisOverviewNode.click();">
+                
+                <a href="infoGenCimisOverview.jsp" id="cimisOverviewNode">
+                    CIMIS Overview
+                </a>
+            </td>
+        </tr>
+    
+
+    
+    
+        <tr>
+            <td class="menulines" onclick="cimisUseNode.click();">
+                
+                <a href="infoGenCimisDataUse.jsp" id="cimisUseNode">
+                    CIMIS Data Uses
+                </a>
+            </td>
+        </tr>
+    
+    <tr><td colspan="2" height="10"/></tr>
+    <tr>
+        <td class="menulinesHeading">
+        Weather Stations
+        </td>
+    </tr>
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="stationListNode.click();">
+            
+            <a href="frontStationListInfo.do" id="stationListNode">
+                Station List
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="locationMapNode.click();">
+            
+            <a href="infoStnMap.jsp" id="locationMapNode">
+                Location Maps
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="sensorSpecsNode.click();">
+            
+            <a href="infoStnSensorSpec.jsp" id="sensorSpecsNode">
+                Sensor Specs
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="sitingNode.click();">
+            
+            <a href="infoStnSiting.jsp" id="sitingNode">
+                Siting Info
+            </a>
+        </td>
+    </tr>
+    
+    
+    
+    
+    <tr>
+        <td class="menulines" onclick="opMaintNode.click();">
+            
+            <a href="infoStnMaint.jsp" id="opMaintNode">
+                Network Maintenance
+            </a>
+        </td>
+    </tr>
+    
+
+    <tr><td colspan="2" height="10"/></tr>
+    <tr>
+        <td class="menulinesHeading">
+        Evapotranspiration
+        </td>
+    </tr>
+
+    
+    
+    <tr>
+	<td class="menulines" onclick="etoOverviewNode.click();">
+            
+            <a href="infoEtoOverview.jsp" id="etoOverviewNode">
+                ET Overview
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="equationNode.click();">
+            
+            <a href="infoEtoEquation.jsp" id="equationNode">
+                Equations
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="cropCoNode.click();">
+            
+            <a href="infoEtoCropCo.jsp" id="cropCoNode">
+                Crop Coefficients
+            </a>
+        </td>
+    </tr>
+    
+
+    <tr>
+        <td class="menulines" onclick="etoZoneMapNode.click();">
+            
+            <a href="#" onclick="window.open('images/etomap.jpg','','menubar=0,resizable=1,scrollbars=1,width=300,height=300'); return false;" id="etoZoneMapNode">
+                ETo Zones Map
+            </a>
+        </td>
+    </tr>
+
+    <tr><td colspan="2" height="10"/></tr>
+    <tr>
+        <td class="menulinesHeading">
+        Irrigation
+        </td>
+    </tr>
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="irrOverviewNode.click();">
+            
+            <a href="infoIrrOverview.jsp" id="irrOverviewNode">
+                Irrigation Overview
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="waterBudgetNode.click();">
+            
+            <a href="infoIrrBudget.jsp" id="waterBudgetNode">
+                Water Budget
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="irrSchedulingNode.click();">
+            
+            <a href="infoIrrSchedule.jsp" id="irrSchedulingNode">
+                Irrigation Scheduling
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="mobileLabNode.click();">
+            
+            <a href="infoIrrMobileLab.jsp" id="mobileLabNode">
+                Mobile Labs
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="softwareNode.click();">
+            
+            <a href="infoIrrSoftware.jsp" id="softwareNode">
+                Software
+            </a>
+        </td>
+    </tr>
+    
+
+    
+    
+    <tr>
+        <td class="menulines" onclick="consultantNode.click();">
+            
+            <a href="infoIrrConsultant.jsp" id="consultantNode">
+                Consultants
+            </a>
+        </td>
+    </tr>
+    
+    <tr><td colspan="2" height="25"/></tr>
+</table>
+</td>
+		<td width="1" bgcolor="#BFB7B1"><img height="1" width="1" src="images/blank.gif"></td>
+		<td width="587">
+			<table width="587" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="587">
+
+
+<table width="587" cellspacing="0" cellpadding="0">
+  <tr><td colspan="3" width="10" height="10"><img height="10" width="10" src="images/blank.gif"></td></tr>
+  <tr> 
+    <td width="10" height="10"><img height="10" width="10" src="images/blank.gif"></td>
+    <td width="567"> 
+      <table align="center" width="567" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td class="title">
+            Info Center
+          </td>
+        </tr>
+        <tr><td colspan="1" height="10"/></tr>
+        <tr> 
+          <td class="content">
+            <img src="images/info.jpg" width="100" height="80" hspace="10" align="right" alt="Picture of baseball field"/>The dynamic <b>Info Center</b> is frequently updated providing useful information on weather stations, evapotranspiration, and irrigation. Information is presented on CIMIS network operations, data processing, and use of the CIMIS data for irrigation scheduling purposes.  The following are brief descriptions of the different pages contained in the Info Center: 
+          </td>
+        </tr>
+        <tr><td colspan="1" height="20"/></tr>
+        <tr> 
+          <td class="pageSubTitle">
+            General
+          </td>
+        </tr>
+        <tr><td colspan="1" height="1" bgcolor="#BFB7B1"/></tr>
+        <tr><td colspan="1" height="5"/></tr>
+        <tr> 
+          <td> 
+            <table cellspacing="0" cellpadding="0" border="0" width="567">
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoGenCimisOverview.jsp" class="blueLink">CIMIS Overview</a>
+                </td>
+                <td valign="top" class="content"> 
+                  <b>CIMIS Overview</b> describes the CIMIS program and how it works.  It contains detailed information on how the CIMIS data is collected, processed, stored, and disseminated to the end users.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoGenCimisDataUse.jsp" class="blueLink">CIMIS Data Uses</a>
+                </td>
+                <td valign="top" class="content"> 
+                  The <b>CIMIS Data Uses</b> discusses trends in uses of the CIMIS data over time and lists some examples of the users and uses of CIMIS weather data.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr><td colspan="1" height="10"/></tr>
+        <tr> 
+          <td class="pageSubTitle">
+            Weather Stations
+          </td>
+        </tr>
+        <tr><td colspan="1" height="1" bgcolor="#BFB7B1"/></tr>
+        <tr><td colspan="1" height="5"/></tr>
+        <tr> 
+          <td> 
+            <table cellspacing="0" cellpadding="0" border="0" width="567">
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/frontStationListInfo.do" class="blueLink">Station List</a>
+                </td>
+                <td valign="top" class="content"> 
+                  The <b>Station List</b> provides a listing of all CIMIS stations by station number, station name, county, status and detailed information about that station.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoStnMap.jsp" class="blueLink">Location Maps</a>
+                </td>
+                <td valign="top" class="content"> 
+                  <b>Location Maps</b> provides a map of California with the four California Department of Water Resources (DWR) Districts (Northern, Central, San Joaquin, and Southern). Clicking on any one of the four Districts takes the user to a detailed map of the District showing counties and station locations. A user can click on individual stations to retrieve detailed station information.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoStnSensorSpec.jsp" class="blueLink">Sensor Specs</a>
+                </td>
+                <td valign="top" class="content"> 
+                  The <b>Sensor Specifications</b> provides detailed descriptions of the different sensors that CIMIS utilizes to collect the weather data including manufacturer's specifications.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoStnSiting.jsp" class="blueLink">Siting Info</a>
+                </td>
+                <td valign="top" class="content"> 
+                  <b>Siting Information</b> describes the significance of weather station site conditions and details the siting and environmental criteria CIMIS utilizes in selecting weather station sites. This section can be very helpful in assisting those who may wish to sponsor a CIMIS station.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td valign="top" class="content"> 
+                  <a href="/cimis/infoStnMaint.jsp" class="blueLink">Network Maintenance</a>
+                </td>
+                <td valign="top" class="content"> 
+                  <b>Network Maintenance</b> describes procedures that CIMIS personnel use to maintain the weather stations.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr><td colspan="1" height="20"/></tr>
+        <tr> 
+          <td class="pageSubTitle">
+            Evapotranspiration
+          </td>
+        </tr>
+        <tr><td colspan="1" height="1" bgcolor="#BFB7B1"/></tr>
+        <tr><td colspan="1" height="5"/></tr>
+        <tr> 
+          <td> 
+            <table cellspacing="0" cellpadding="0" border="0" width="567">
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoEtoOverview.jsp" class="blueLink">ET Overview</a>
+                </td>
+                <td class="content" valign="top"> 
+                  <b>ETo Overview</b> defines Evapotranspiration and its processes. The necessity for the idea of reference Evapotranspiration (ETo) is explained including how to use it in irrigation scheduling.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoEtoEquation.jsp" class="blueLink">Equations</a>
+                </td>
+                <td class="content" valign="top"> 
+                  <b>Equations</b> describes the Modified Penman and Penman-Monteith equations that CIMIS uses to estimate reference evapotranspiration.  Links to these equations are provided at the bottom of the page.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoEtoCropCo.jsp" class="blueLink">Crop Coefficients</a>
+                </td>
+                <td class="content" valign="top"> 
+                  The concept of <b>Crop Coefficients</b> is introduced and their use in calculating actual evapotranspiration for a specific crop discussed. Important web site links to crop coefficients are also presented.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="#" class="blueLink" onclick="window.open('images/etomap.jpg','','menubar=0,resizable=1,scrollbars=1,width=250,height=440'); return false;">ETo Zones Map</a>
+                </td>
+                <td class="content" valign="top"> 
+                  The <b>ETo Zones Map</b> allows users to view the ETo Zones for the State of California.  The map was developed by DWR and UC Davis and divides the State into 18 zones based on long-term monthly average ETo.  At present time, the map is not available for downloading from the web.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr><td colspan="1" height="20"/></tr>
+        <tr> 
+          <td class="pageSubTitle">
+            Irrigation
+          </td>
+        </tr>
+        <tr><td colspan="1" height="1" bgcolor="#BFB7B1"/></tr>
+        <tr><td colspan="1" height="5"/></tr>
+        <tr> 
+          <td> 
+            <table cellspacing="0" cellpadding="0" border="0" width="567">
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrOverview.jsp" class="blueLink">Irrigation Overview</a>
+                </td>
+                <td class="content" valign="top"> 
+                  <b>Irrigation Overview</b> explains the need for irrigation and how the CIMIS program can assist growers and landscape managers to irrigate efficiently.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrBudget.jsp" class="blueLink">Water Budget</a>
+                </td>
+                <td class="content" valign="top"> 
+                  The <b>Water Budget</b> method of irrigation scheduling is explained, briefly outlining the various parameters that go into this method of scheduling.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrSchedule.jsp" class="blueLink">Irrigation Scheduling</a>
+                </td>
+                <td class="content" valign="top"> 
+                  Deciding when to irrigate and how much water to apply is not an easy task. Here <b>Irrigation Scheduling</b> using the water budget method is discussed in greater detail using an example.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrMobileLab.jsp" class="blueLink">Mobile Labs</a>
+                </td>
+                <td class="content" valign="top"> 
+                  Using <b>Mobile Labs</b> as a tool to increase irrigation efficiency and distribution uniformity is discussed and related publications listed.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrSoftware.jsp" class="blueLink">Software</a>
+                </td>
+                <td class="content" valign="top"> 
+                  Different computer <b>Software</b> programs that can assist irrigators in irrigation scheduling and other decision-making processes are listed.
+                </td>
+              </tr>
+              <tr><td width="150" valign="top" class="content"><img height="10" width="150" src="images/blank.gif"></td><td width="417" valign="top" class="content"><img height="10" width="417" src="images/blank.gif"></td></tr>
+              <tr> 
+                <td class="content" valign="top"> 
+                  <a href="/cimis/infoIrrConsultant.jsp" class="blueLink">Consultants</a>
+                </td>
+                <td class="content" valign="top"> 
+                  <b>Consultants</b> within the state of California that can be hired to assist irrigators are listed with complete contact addresses.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr><td colspan="1" height="25"/></tr>
+      </table>
+    </td>
+    <td width="10" height="10"><img height="10" width="10" src="images/blank.gif"></td>
+  </tr>
+  <tr><td colspan="3" width="10" height="10"><img height="10" width="10" src="images/blank.gif"></td></tr>
+</table>
+</td>
+				</tr>
+			</table>
+		</td>
+		<td width="1" bgcolor="#BFB7B1"><img height="1" width="1" src="images/blank.gif"></td>
+	</tr>
+	<tr valign="top">
+		<td width="740" colspan="5">
+
+
+
+<table align="center" width="740" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td width="150" align="center" bgcolor="#003399" class="whiteContent"> 
+      <a href="#" class="whiteLink">Back to Top</a> </td>
+    <td width="1" bgcolor="FFFFFF"/> 
+    <td width="150" align="center" bgcolor="#003399" class="whiteContent"> 
+      <a href="/cimis/infoGenCimisOverview.jsp" class="whiteLink">About Us</a> </td>
+    <td width="1" bgcolor="FFFFFF"/> 
+    <td width="150" align="center" bgcolor="#003399" class="whiteContent"> 
+      <a class="whiteLink" href="mailto:temesgen@water.ca.gov"> Contact Us</a> </td>
+    <td width="1" bgcolor="FFFFFF"/> 
+    <td width="287" align="center" bgcolor="#003399" class="whiteContent"> 
+      <a href="/cimis/siteMap.jsp" class="whiteLink">Site Map</a> </td>
+  </tr>
+  <tr valign="top"> 
+    <td colspan="7" align="center" height="25"/> 
+  </tr>
+  <tr valign="top"> 
+    <td colspan="7" align="center" class="content">
+      <a href="http://www.water.ca.gov/conditions.html" class="contentLink">Conditions of Use</a> |
+      <a href="http://www.water.ca.gov/privacy.html" class="contentLink">Privacy Policy</a> |
+      <a href="http://www.water.ca.gov/comment.html" class="contentLink">Comments or Suggestions?</a><br/>
+      © 2005 State of California.<br/>
+    </td>
+  </tr>
+</table>
+</td>
+	</tr>
+</table>
+</body>
+</html>

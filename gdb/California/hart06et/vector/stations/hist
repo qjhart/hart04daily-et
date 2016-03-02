@@ -1,0 +1,3 @@
+COMMAND: v.in.ascii input="stations.asc" output="stations" format="point" fs="|" columns="station int, x double, y double, name varchar(40), elev double" x=2 y=3 z=5 cat=1
+GISDBASE: /home/quinn/projects/cimis/doc/hart06et/gdb
+LOCATION: California MAPSET: hart06et USER: quinn DATE: Mon Apr  3 01:31:58 2006

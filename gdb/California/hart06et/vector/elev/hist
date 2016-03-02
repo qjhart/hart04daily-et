@@ -1,0 +1,3 @@
+COMMAND: r.contour input="Z@2km" output="elev" step=2000 cut=0
+GISDBASE: /home/quinn/projects/cimis/doc/hart06et/gdb
+LOCATION: California MAPSET: hart06et USER: quinn DATE: Mon Apr  3 00:53:21 2006

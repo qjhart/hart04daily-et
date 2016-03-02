@@ -1,0 +1,35 @@
+\begin{thebibliography}{RBW00}
+
+\bibitem[BCH96]{beyer.ea:96:modif-of}
+H.G. Beyer, C.~Costanzo, and D.~Heinmann.
+\newblock Modifications of the heliosat procedure for irradiance estimates from
+  satellite images.
+\newblock {\em Solar Energy}, 56(3):207--212, 1996.
+
+\bibitem[FLG89]{froui.ea:89:simpl-analy}
+R.~Frouin, D.W. Ligner, and C.~Gautier.
+\newblock A simple analytical formula to compute clear sky total and
+  photosynthetically available solar irradiance at the ocean surface.
+\newblock {\em Journal of Geophysical Researh}, 94(C7):9731--9742, July 1989.
+
+\bibitem[GL97]{gauti.ea:97:surfa-solar}
+C.~Gautier and M.~Landsfeld.
+\newblock Surface solar radiation flux and cloud radiative forcing for the
+  atmospheric radiation measurement (arm) southern great plains sgp): A
+  satellite, surface observations, and radiative transfer model study.
+\newblock {\em Journal of Atmospheric Sciences}, 54(10):1289--1307, May 1997.
+
+\bibitem[LAW02]{lefer.ea:02:descr-of}
+M.~Leferve, M.~Aluisson, and L.~Wald.
+\newblock Description of the software heliosat-ii for the conversion of images
+  acquired be meteosat satellites in the visible band into maps of solar
+  radiation available at ground level.
+\newblock Technical report, Ecole Des Mines De Paris, November 2002.
+
+\bibitem[RBW00]{rigol.ea:00:on-clear}
+C.~Rigollier, O.~Bauer, and L.~Wald.
+\newblock On the clear sky model of esra -- euorpean solar radiation atlas--
+  with respect to the heliosat method.
+\newblock {\em Solar Energy}, 68(1):33--48, 2000.
+
+\end{thebibliography}

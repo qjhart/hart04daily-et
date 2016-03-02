@@ -1,0 +1,245 @@
+Reviewer #1: Review:  Daily reference ET for California using
+satellite imagery and weather station measurement interpolation
+
+
+Computing a regional estimate of daily reference ET would be very
+valuable.  This is an interesting approach to doing so, but it appears
+incomplete and not ready for publication.
+
+1)      The work hasn't built on previous studies.  The largest term
+in the ETo equation is incoming solar radiation.  A large portion of
+the text here is centered around this calculation (Sections 2.2.1 and
+2.2.2).  Yet, a decade of work by Pinker et al. and the
+near-operational implementation of their approach with GOES are not
+mentioned here.  Similarly, I believe that Diak and/or Norman have
+produced a multi-state (continental?) approach for estimating ETo .
+I think they supported a web site providing such ETo information for a
+large part of the U.S. on a daily basis.  This was not cited either.
+At the very least, I would like to hear a) how this approach improves
+on those approaches and b) how the results compare with the results of
+those approaches.  This study needs to be aware of and build on the
+progress already made in this field.
+
+2)      The interpolation methods also do not build on previous work.
+There have been many other studies proposing to map met data based on
+"simple interpolations".  They have been based on the same (and more
+complex) methods.  There have been many other studies that have built
+on these results to show that more robust interpolation methods are an
+improvement, and combining a network of meteorological measurements
+with simple SVAT models also has potential.  The weaknesses in
+interpolation expressed in this study have been seen before and
+addressed (though no operational system is in place).  That is where
+this study should have started.
+
+3)      The Monte Carlo approach for determining estimate uncertainty
+is far from a test of accuracy.  I understand that results at this
+scale and resolution are difficult to assess.  However, I wish the
+authors would put more thought into this aspect of the project.  This
+uncertainty analysis is weak, flawed (as pointed out by the authors),
+and probably doesn't address the concerns of the users.
+
+4)      The conclusions section is shallow.  What has this study
+accomplished?  They suggest that one next step is to incorporate a
+weather prediction model into this surface parameter estimation.
+There are studies in which this has been done as well (see SAHRA web
+site, for example).  An accomplishment might have been to become
+familiar with that work and then see how it could be simplified
+without losing accuracy.
+
+This is obviously a sincere attempt to provide a useful product to an
+application of public interest.  The authors have achieved that goal.
+However, by not incorporating previous work, and by apparently not
+planning for an accuracy assessment, the work is a questionable
+contribution to science and should not be published.
+
+
+
+
+Reviewer #2: This paper presents estimation method of reference
+evapotranspiration (ETo) using GOES satellite images and ground based
+weather measurements. This technique attempts to estimate ETo with
+spatial variability. The topic is within the focus of the journal. The
+study has potential to improve future water resources management.
+The paper has a few major problems and several minor problems. The
+paper is acceptable with major revision.
+
+Major Problems:
+
+(1) I felt difficulty to understand the paper.
+For example, term K first appears in page 4 (Eq. 4) but it is not
+clearly explained until page 13 (Section 2.2.2). Global turbidity
+database first appears in Figure 2 (page 6) but it is not explained
+until page 12. I think the authors should provide a clear overview of
+the author's work in the beginning of the paper. Authors attempts to
+provide overview using Figure 2, but the figure is rather confusing
+(see the minor comment). With the current manuscript, readers need to
+read at least twice to understand the paper.
+
+(2) ETo is easily calculated at weather stations. The value of this
+paper depends on the accuracy of weather interpolation and cloud
+evaluation. Using the available data, I think there is much better way
+for authors to evaluate the accuracy.
+A better method to evaluate the interpolation accuracy would be to use
+some CIMIS stations only for validation purpose. For example, if the
+authors do not use any of five stations in Sacramento area during
+temperature-wind-ETo estimations, authors can use the stations for
+independent validation (i.e. compare the estimated Tair, U and ETo at
+Sacramento area with actual measurements at the weather stations).
+This approach makes this paper much stronger. However, this change
+asks authors significant amount of time and efforts. I can accept the
+current method by the authors.
+
+
+Minor Problems:
+
+This paper contains several minor problems. However, the authors are
+doing integrated research, and thus, sume minor problems should be
+allowable. Authors do not need to correct every thing.
+
+(1) Abstract and in Introduction:
+Authors call (2km)^2 resolution as "high resolution". The (2km)^2
+spatial resolution is "high" if compared to traditional point-based
+ETo estimations. However, in general satellite applications, (2km)^2
+is probably categorized as low resolution. For example, MODIS
+(250m-1km resolution) has been named as MODerate-resolution Imaging
+Spectroradiometer. Calling (2km)^2 as high resolution might confuse
+readers.
+
+(2) Reference in introduction (Walter et al., 2000):
+Recently ASCE-ET group has published technical book for reference ET
+(Allen et al., 2005. The ASCE Standardized Reference
+Evapotranspiration Equation
+(http://www.asce.org/bookstore/book.cfm?isbn=078440805X)). Think about
+updating the reference from Walter et al., 2000 to the book, as the
+conference proceeding is not easily accessible.
+
+(3) Figure 1:
+In Figure 1, ETo in north California (~1 mm/d) seems to be too low for
+summer, even if the region is covered by cloud. Figure 3 indicates the
+region does not have weather station. Does the low ETo artificially
+derived by extrapolating weather data or does the area actually had
+very low ETo on the specific date? Figure 13 shows that north
+California has high ETo in August and the error is only 1 mm/d (i.e.
+accuracy is quite high). Does it mean that the ETo of the region was
+most likely ~1 mm/d at 6/18/2005? This is just a simple question (not
+a problem, suggestion or recommendation).
+
+(4) Equation 6:
+I do not have Walter et al., 2000, but please double check if the
+equation 6 is correct. The vapor pressure term might be es rather than
+ea.
+
+(5) Figure 2:
+I have a difficulty on understanding this figure. Authors need to
+better explain the figure in the manuscript. The diagram does not
+agree with the ETo equations (Eq1-10). For example, K is input of Rs
+in Eq 4, but it is not in figure 2. Albedo is input of Rns in Eq 3,
+but it is not in figure 2. In the figure, 2-D spline is apparently
+applied for wind speed, but the main text (p8) says that "Wind speed
+estimations used 3-D spline". The diagram includes Global Turbidity
+Database, but it is not explained until page 12. I am confused.
+
+(6) Lapse rate (Page 9):
+I could not understand where the "standard lapse rate of 5C/km" came
+from. Environmental lapse rate, frequently used as a standard, is 6.5
+C/km, dry adiabatic lapse rate is ~10C/km. Please explain how you have
+selected 5C/km.
+
+(7) Table 2: I cannot understand Table 2. What is lapse rate for dew
+point temperature mean?  I guess the numbers in Table 2 are not "lapse
+rate" but the difference of temperature caused by combination effect
+of elevation (i.e. lapse rate), regional difference of weather by
+local topography, soil moisture and many others.
+
+(8) Temperature and wind interpolation (Page 10):
+The temperature interpolation is very unstable in some regions (more
+than 10C difference). Also, interpolation of wind speed will have
+considerable error because wind is largely affected by topography and
+obstacles. Even CIMIS observed wind speed would not be representative
+wind of the area (as you know, measurement of "representative" wind
+speed is very difficult). The errors in interpolation are okay.
+However, I recommend authors to at least conduct sensitivity analysis
+and tell readers how much ETo is sensitive (or insensitive) to the
+error in temperature and wind speed.
+
+(9) Solar radiation (p12):
+Authors discuss the accuracy of Heliosat-II Rs by comparing with a
+simple model of FAO. This discussion can be omitted. Authors are
+comparing estimated Rs with actual Rs in Figure 10. The comparison in
+Figure 10 is the important one.
+
+(10) Equation 11:
+This equation needs more clear explanation. I could not understand the
+equation. Does the ki in the equation hourly clear-sky factor (Ki)? If
+yes, why the clear-sky factor can exceed 1.0? If no, what is ki?
+
+(11) Figure 11:
+In page 14, "The spatial distribution of errors for Rs is not equal
+over all parts of California as shown in Figure 2.2.2.".
+I think Figure 2.2.2 must be Figure 11.
+
+(12) Equation 12:
+The first minus sign is incorrect. It must be plus. See Eq. 5.
+
+(13) Measurement Uncertainty (pp16-18):
+Unfortunately, I am not familiar with Monte-Carlo simulation, so that
+I could not evaluate this part with my knowledge. However, Figure 13
+is little strange for me. In the figure, estimated error of
+north-western part of California is about 1 mm/d (1 standard
+deviation). Average ETo of the region is about 7 mm/day. Thus, the
+error in ETo is about 15% for the region. However, Figure 7 shows a
+big uncertainty of temperature estimation in the region, and I do not
+know if such a high accuracy is achieved for the region. Also, I guess
+the error evaluation in Figure 13 does not account error of wind speed
+by topographic effect etc.
+Again, my comment is without understanding Monte-Carlo simulation. If
+the authors believe that their method of error evaluation is correct,
+I am okay with it.
+- Show quoted text -
+
+
+
+Marcela's COMMENTS
+
+here are my comments
+
+R1: mainly asking for justification why things were done in the way
+they were.  However, i do not justify his rejection. This jutification
+could have been easily added.
+
+One of the things i see in this lines is that ,may be we can frame the
+paper more as a practical model developed than a scienctific
+advancement of concepts.  We are not advancing any concepts, but using
+things that are standard.
+
+I think we can not avoid doing a review of similar work (Pinker, Diak,
+etc), same for interpolation (i disagree with what he says regarding
+to that. The problem with California is complex terrain and lack of
+data in the mountains, so i still support the use of daymet). But we
+still need to justify why we use it and put it more in context of
+other work.  Regarding the Monte Carlo approach, i completely disagree
+with what he says. I think it is useful and we do what we can, given
+the info we have. May be our mistake is to sell the Monte Carlo as
+improving predictions. We are using it as an indicator of were errors
+can be, so users can have less or more confidence in models. May be we
+can soften the text to indicate it is just an indication.
+
+One thing we can add in conclusions-discussion is an example of its
+use.  Has the model been used already for water managers? Or may be
+argument further which are potential uses.
+
+With R2:
+
+Rewrite, this is "easy".  This reviewer also sujest cross validation,
+that is feasible.  We can do sensitivity analysis, although will be
+alot work, considering the spatial and temporal dimension of data.
+
+May be the solution is to choose another journal with more practical
+orientation.
+
+
+I agree with you as well that the monte-carlo simulation is very
+useful, even if we don't know all the errors, to well.  I think we do
+have to justiffy the method a bit more, but otherwise, it's very
+useful.
+

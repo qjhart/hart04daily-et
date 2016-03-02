@@ -1,0 +1,953 @@
+\documentclass[reviewcopy]{elsart}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{units}
+\usepackage{amsmath}
+
+\usepackage{ifthen}
+\provideboolean{figures-at-end}
+\provideboolean{figures-are-included}
+\provideboolean{captions-are-included}
+\setboolean{figures-at-end}{false}
+\setboolean{figures-are-included}{false}
+\setboolean{captions-are-included}{true}
+
+\ifthenelse{\boolean{figures-at-end}}{\usepackage{endfloat}}{}
+\newcommand{\figuremaybe}[1]{\ifthenelse{\boolean{figures-are-included}}{#1}{}}
+\newcommand{\captionmaybe}[1]{\ifthenelse{\boolean{captions-are-included}}{\caption{#1}}{}}
+
+\usepackage{acronym}
+\acrodef{TG}{Truncated Gaussian}
+\acrodef{PCA}{Principal Components Analysis}
+\acrodef{GIS}{Geographic Information System}
+\acrodef{GRASS}{Geographic Resources Analysis Support System}
+\acrodef{ASCE}{American Society of Civil Engineers}
+\acrodef{ASCE-ET}{Evapotranspiration in Irrigation and Hydrology Committee}
+\acrodef{RST}{Regularized Spline with Tension}
+\acrodef{UA}{uncertainty analysis}
+\acrodef{SA}{sensitivity analysis}
+\acrodef{NOAA}{National Oceanic and Atmospheric Administration}
+\acrodef{GOES}{Geostationary Operational Environmental Satellite}
+\acrodef{CIMIS}{California Irrigation Management Information System}
+\acrodef{FAO}{Food and Agriculture Organization of the United Nations}
+\acrodef{ET}[\ensuremath{ET}]{Evapotranspiration}
+
+\newcommand{\ETo}{\ensuremath{ET_0}}
+\newcommand{\Tm}{\ensuremath{T_m}}
+\newcommand{\Tn}{\ensuremath{T_n}}
+\newcommand{\Tx}{\ensuremath{T_x}}
+\newcommand{\dewp}{\ensuremath{T_{dewp}}}
+\newcommand{\U}{\ensuremath{U}}
+\newcommand{\ea}{\ensuremath{e_a}}
+\newcommand{\es}{\ensuremath{e_s}}
+\newcommand{\psyc}{\ensuremath{\gamma}}
+\newcommand{\vp}{\ensuremath{\Delta}}
+\newcommand{\Rn}{\ensuremath{R_{n}}}
+\newcommand{\Rns}{\ensuremath{R_{ns}}}
+\newcommand{\Rs}{\ensuremath{R_{s}}}
+\newcommand{\Rso}{\ensuremath{R_{so}}}
+\newcommand{\Rnl}{\ensuremath{R_{nl}}}
+\newcommand{\G}{\ensuremath{G}}
+\newcommand{\K}{\ensuremath{K}}
+
+\begin{document}
+%
+\begin{frontmatter}
+  \title{Daily reference evapotranspiration for California using
+    satellite imagery and weather station measurement interpolation}
+%
+\author[calspace]{Quinn~Hart\corauthref{cor}}
+\corauth[cor]{Corresponding author.}
+\ead{qjhart@ucdavis.edu}
+\author[calspace]{Marcela~Brugnach\thanksref{marcela}}
+\ead{mbrugnac@usf.uos.de}
+\author[cimis]{Bekele~Temesgen}
+\ead{temesgen@water.ca.gov}
+\author[calspace]{Carlos~Rueda}
+\ead{carueda@ucdavis.edu}
+\author[calspace]{Susan~Ustin}
+\ead{slustin@ucdavis.edu}
+\author[cimis]{Kent~Frame}
+\ead{kframe@water.ca.gov}
+
+\address[calspace]{CalSpace, University of California, Davis, Davis, CA, USA }
+
+\thanks[marcela]{Currently: Institute of Environmental Systems
+  Research, University of Osnabrueck, Germany }
+
+\address[cimis]{California Irrigation Management Information System
+  (CIMIS), California Department of Water Resources, Sacramento, CA,
+  USA }
+
+\begin{abstract}
+  Spatially distributed \ETo\ is calculated to produce daily
+  \ETo\ maps for the State of California at high spatial
+  resolution, $(\unit[2]{km})^2$.  Hourly \acs{NOAA} \acs{GOES} visible
+  channel imager data are used to modify modeled radiation estimates.
+  These are combined with interpolated \ac{CIMIS} weather station
+  meteorological data to satisfy the Penman-Monteith \ETo\ 
+  equation.  Data have been acquired and \ETo\ estimated daily from
+  February 2003 through April 2006.
+\end{abstract}
+
+\begin{keyword}
+% keywords here, in the form: keyword \sep keyword
+  evapotranspiration \sep Penman-Monteith equation \sep satellite
+  imaging \sep remote sensing
+% PACS codes here, in the form: \PACS code \sep code
+% http://www.aip.org/pacs
+\PACS 92.40.Zg \sep 92.40.Je \sep 42.68.Wt
+\end{keyword}
+\end{frontmatter}                                
+
+\begin{table}[htbp]
+  \centering
+  \captionmaybe{Symbols used in this report}
+  \label{tab:symbols}
+  \figuremaybe{
+  \begin{tabular}{l|l|l}
+    Symbol & Description & Units \\
+    \hline \hline
+    \ETo & reference evapotranspiration & \unitfrac{mm}{day} \\
+    \Rn & net radiation & \unitfrac{MJ}{m\ensuremath{^{2}}\,day} \\
+    \Rnl & net longwave radiation & \unitfrac{MJ}{m\ensuremath{^{2}}\,day} \\
+    \Rs &  incoming solar radiation  & \unitfrac{MJ}{m\ensuremath{^{2}}\,day} \\
+    \Rso & clear sky solar radiation  & \unitfrac{MJ}{m\ensuremath{^{2}}\,day} \\
+    \G & soil heat flux density & \unitfrac{MJ}{m\ensuremath{^{2}}\,day} \\
+    \Tm  & daily mean air temperature at \unit[1.5]{m} height  & \unit{\ensuremath{^\circ}C} \\
+    \Tn  & daily minimum air temperature at \unit[1.5]{m} height  & \unit{\ensuremath{^\circ}C} \\
+    \Tx  & daily maximum air temperature at \unit[1.5]{m} height  & \unit{\ensuremath{^\circ}C} \\
+    \dewp  & dew point temperature at \unit[1.5]{m} height & \unit{\ensuremath{^\circ}C} \\
+    \U & wind speed at \unit[2]{m} height & \unitfrac{m}{s} \\   
+    \ea & actual vapor pressure  & \unit{kPa} \\
+    \es & saturation vapor pressure  & \unit{kPa} \\
+    \psyc& psychrometric constant & \unitfrac{kPa}{\ensuremath{^\circ}C} \\
+    \vp  & slope of vapor pressure-temperature curve & \unitfrac{kPa}{\ensuremath{^\circ}C} \\
+    \K &  clear sky factor   & \\
+    \ensuremath{\sigma} & Stefan-Boltzmann constant = $4.903e^{-9}$ & \unitfrac{MJ}{m\ensuremath{^2}K\ensuremath{^4}\,day} \\
+    \ensuremath{\alpha} & Albedo & \\
+  \end{tabular}
+}
+\end{table}
+
+\section{Introduction}
+
+California experiences periodic water shortages from natural climate
+variability, e.g., El Ni\~{n}o cycles, and is at risk for potential
+longer-term extended droughts due to climate change. Winters with
+below normal snowpack, either from low precipitation or early
+snowmelt, cause low summer streamflow and inadequate water supplies
+for agriculture and urban uses.  California agriculture is a \$25
+billion/year economic sector and the economy is at risk without
+efficient water management.  Improved monitoring can increase the
+efficiency of water use and mitigate potential losses.
+
+The \acf{CIMIS} program was successfully introduced by the California
+Department of Water Resource and the University of California, Davis
+in 1982, to help farmers, turf managers and other resource managers
+develop water budgets that improve irrigation scheduling and limit
+over-watering. The \ac{CIMIS} system is a repository of meteorological
+data collected at over 130 computerized weather stations located at
+key agricultural and municipal sites throughout California which
+provide comprehensive, timely, weather data collected hourly and
+daily.
+
+This paper builds on the \ac{CIMIS} base by developing a methodology
+to extend the weather station data to spatial daily \ETo\ maps of
+California.  Daily reference \ETo\ maps for California are
+calculated for a high spatial resolution $(\unit[2]{km})^2$ grid. We
+developed daily statewide monitoring capability for estimating
+reference evapotranspiration \ETo\ using the \ac{NOAA} \ac{GOES}
+data and ground based weather data from the \ac{CIMIS} weather
+stations.  Figure~\ref{fig:et0} shows an example \ETo\ map for
+California.
+
+\begin{figure}[htbp]
+  \centering
+  \figuremaybe{
+    \resizebox{0.5\textwidth}{!}{\input{et0.pdf.tex}}
+  }
+  \captionmaybe{ \ETo\ estimations on 2005/06/18. The scale is in \unit{mm day$^-1$}. }
+  \label{fig:et0}
+\end{figure}
+    
+\ac{ET} is a measure of the water requirements for the healthy
+functioning of a particular plant-soil-atmosphere system. By knowing
+the water requirements of a particular system, a variety of water
+issues, such as irrigation scheduling and design, landscape planning
+and water transfer can be addressed.
+
+By specifying standard crop parameters with a well irrigated
+system, a standard \ETo\ can be determined that requires only
+meteorological measurements.  A standardized \ETo\ separates
+atmospheric drivers on \ac{ET} from crop specifics, and reduces the
+need to develop more complex models for specific crop types and growth
+stages.  Generally, field specific \acp{ET} are developed as simple
+linear relationships to \ETo.
+
+The \ac{ASCE} \ac{ASCE-ET} defines one standardized reference
+evapotranspiration equation and two reference
+surfaces~\citep{walter00stand-refer}.  This paper uses the
+hypothetical short crop surface for \ETo, which resembles an extensive
+surface of green grass of uniform height, actively growing with
+adequate water and a canopy completely shading the ground.  The
+reference crop has an assumed height of \unit[0.12]{m}, bulk surface
+resistance of \unitfrac[70]{s}{m}, and coefficients,$C_n
+= 900$ and $C_d = 0.34$.
+
+The equation describes the control that environmental factors, such as
+solar radiation, wind speed, air temperature and humidity exert on
+\ETo. These factors influence \ac{ET} either by providing the
+energy for vaporization or by increasing efficiency in the removal of
+water vapor from the surface.
+
+The following equations define \ETo\ and its parameters in
+more detail:
+
+\begin{align}
+  \ETo &= \frac{0.408  \vp  (\Rn - \G) + \gamma \frac{900}{ \Tm + 273} \U (\es - \ea)}{\vp + \gamma  (1 + 0.34 \U)} \label{eq:et0} \\
+  \Rn &= \Rns - \Rnl \label{eq:rn} \\
+  \Rns &= (1 - \alpha) \Rs \label{eq:rns}\\
+  \Rs &= \K \Rso \label{eq:rs}\\
+  \Rnl &= (1.35\frac{\Rs}{R_{so}}-0.35)(0.34-0.14\sqrt{ea})\sigma\frac{\Tn^4+\Tx^4}{2} \label{eq:rnl} \\
+  \vp    &= \frac{4099  \ea}{ (\Tm + 237.3)^2} \label{eq:delta} \\
+  \psyc&= 0.665\text{e-3}(101.3{\frac{293-0.0065z}{293}}^{5.26}) \\
+  \Tm   &= \frac{\Tn + \Tx}{2} \label{eq:Tm}\\
+  \es   &= \frac{0.6108}{2}  \left(\exp\left(\frac{17.27 \Tn}{\Tn + 237.3}\right) + \exp\left(\frac{17.27 \Tx}{\Tx+237.3}\right)\right) \label{eq:es}\\
+  \ea  &= 0.6108 \exp\left(\frac{17.27 \dewp}{\dewp + 237.3}\right)\label{eq:eadewp}
+\end{align}
+
+$\Rn-\G$ represents the supply of energy available to vaporize water.
+For daily calculations, net radiation, \Rn, is dominant and soil heat
+flux density, \G, is assumed to be negligible.  \Rn\ is calculated as
+the difference between the incoming net shortwave radiation, \Rns\ and
+the outgoing net longwave radiation, \Rnl, (Eq.~\ref{eq:rn}).  \Rns\
+represents the portion of \Rs\ that is not reflected
+(Eq.~\ref{eq:rs}), where \Rs is the amount of incoming solar
+radiation that reaches the earth surface after accounting for the
+effects of absorption, scattering and reflection of the atmosphere.
+\Rs\ is modeled as a fraction of clear sky radiation, \Rso, where the
+clear sky fraction, \K\ is determined from \ac{GOES} satellite data,
+described in Section~\ref{sec:radiation}.  The reference
+crop has an albedo of 0.23.  Net longwave radiation, \Rnl\ represents
+the exchange of radiation between the crop surface and the atmosphere
+and clouds (Eq.~\ref{eq:rnl}).
+
+In the \ETo\ equation, the water content of the air is represented
+with $(\es - \ea)$ expressing the vapor pressure deficit.  Saturation
+vapor pressure, \es, is computed as the mean between saturation vapor
+pressure at maximum air temperature and saturation vapor pressure at
+minimum air temperature (Eq.~\ref{eq:es}).  The actual vapor pressure,
+\ea\ is calculated from dew point temperature (Eq.~\ref{eq:eadewp}).
+The slope of the vapor pressure-temperature curve is \vp\
+(Eq.~\ref{eq:delta}) and \psyc\ is the psychrometric constant.  \Tm\
+is the mean air temperature (Eq.~\ref{eq:Tm}).
+
+\section{\ETo\ Parameter Estimation}
+
+Calculating \ETo\ requires meteorological data including; air
+temperature, incoming solar radiation, average daily wind speed and
+dew point temperature. Solar radiation is derived from models coupled
+with \ac{GOES} satellite imagery for cloud cover estimation.
+Temperatures, wind speed and dew point are derived by interpolating
+point data from the network of \ac{CIMIS} weather stations.
+
+For spatial estimates of \ETo, the parameters need to be calculated
+for every pixel in a gridded surface of California.
+Figure~\ref{fig:process} shows an overview of all steps for
+calculating statewide \ETo.  These steps include procedures for
+spatially interpolating \ac{CIMIS} data as well as processing
+\ac{GOES} image data to predict \K\ and \Rs.  All processing steps are
+performed using existing or created modules in the
+\ac{GRASS}~\citep{GRASS_GIS_software, neteler04open-sourc-gis}
+\ac{GIS} application.
+
+\begin{figure*}[htbp]
+  \centering
+  \figuremaybe{
+    \resizebox{1\textwidth}{!}{\input{process.pdf.tex}}
+  }
+  \captionmaybe{Processing steps for generating \ETo.}
+\label{fig:process}
+\end{figure*}
+
+Figure~\ref{fig:process}, shows two separate methods were used to
+calculate temperature related parameters, discussed in
+Section~\ref{sec:ground-stat-interp}.  This small ensemble of
+estimates gives a measure of potential errors in the estimates, and
+are used in a sensitivity analysis of the results, discussed in
+Section~\ref{sec:meas-uncert}.
+
+\subsection{Ground Station Data Interpolation}
+\label{sec:ground-stat-interp}
+
+Maximum air temperature, \Tx, minimum air temperature, \Tn,
+dew point, \dewp, and average wind speed, \U, are derived by
+spatially interpolating point data from the \ac{CIMIS} network. These
+weather stations are spatially distributed as shown in
+Figure~\ref{fig:stations}.  Areas such as California's central valley
+have a dense distribution of stations, but mountainous, urban, and
+desert regions are less represented.  This distribution results from
+the design to inform California's agricultural irrigation practices.
+For various reasons, not all stations report data daily; on average it
+is possible to use data from about 120 stations.
+Figure~\ref{fig:stations} groups stations by elevation with higher
+stations having larger symbols.  Figure~\ref{fig:stations} also
+identifies three small transects used to validate temperature lapse
+rates.
+
+\begin{figure}[htbp]
+  \centering
+  \figuremaybe{
+    \resizebox{.5\textwidth}{!}{\input{stations.pdf.tex}}
+  }
+  \captionmaybe{\ac{CIMIS} weather stations.  Larger symbols imply higher elevations.}
+  \label{fig:stations}
+\end{figure}
+
+Spatial interpolation generates surfaces of continuous fields from
+data collected at discrete locations. Interpolation methods are built
+on assumptions that attributes are continuous over space and values
+close together are more similar than those farther apart.
+
+Several interpolation methods were investigated.  Criteria for method
+selection included accuracy of results, code availability, and
+computational efficiency.  Multiple interpolations created a small
+ensemble of predictions that allowed for an estimation of errors.
+After investigating several methods, we used \ac{RST} and \ac{TG}
+interpolations.
+
+\ac{TG}, sometimes identified as DayMet~\citep{thornton.ea:97:daymet}
+refers to an interpolation method that generates daily surfaces of
+temperature, humidity and other variables over large regions of
+complex terrain.  The method applies the spatial convolution of a
+Gaussian filter with a set of observations.  The weight
+$W_{t,\alpha}(r)$ given to an observation with a radial distance $r$
+from the center of the filter is given by $W_{t,\alpha}(r) =
+\exp(-(r/t)^2\alpha) - \exp(-\alpha)$.  The parameter $t$ determines a
+truncation distance such that the weight is zero if $r>t$. The
+parameter $\alpha$ adjusts the shape of the filter.
+
+On a daily basis, we determine these parameters by exhaustively
+searching the parameter space and selecting the values that minimize
+the estimation error using the standard leave-one-out cross-validation
+methodology.  The \ac{TG} method estimates the truncation radius via
+an iterative algorithm such that it is decreased for regions with high
+observation density and increased otherwise.  Elevation data are
+included in the method as a post-correction step. In the case of
+temperature, this is performed by weighted least-square regression.
+Although the \ac{TG} method is applied as an inverse-distance
+algorithm, the Gaussian function does not force the resultant surface
+to pass through the observations, thus allowing for smoother surfaces.
+
+\ac{RST}~\citep{mitasova.ea:95:rstgrass,neteler04open-sourc-gis} is a
+method that simulates passing a flexible plate close to the known data
+points while minimizing the energy to bend the plate.  Two parameters
+drive the shape of the interpolation.  The tension parameter tunes the
+plate from stiff to flexible.  Low tension (stiff) plates are
+smoother, but can miss high gradient changes.  High tension (flexible)
+plates are less smooth and allow higher gradient changes about
+individual points.  Tension also controls the influence of neighboring
+points.  Lower tension gives points influence over longer distances.
+
+The smoothing parameter controls how much the fitted surface can
+deviate from the measured point values. Since the spatial
+interpolation assigns one value for each (\unit[2]{km})$^2$ pixel,
+variation of the \ac{RST} from the measured points is allowed.
+
+Both 2-dimensional and 3-dimensional splines with elevation were used.
+2-D \acp{RST} interpolations along with lapse rate normalization were
+made for temperature estimations.  Wind speed estimations used 3-D
+splines. Parameter values were selected through cross-validation
+exercises in conjunction with visual inspection and were kept constant
+for all estimates.
+
+One example of how the location of \ac{CIMIS} stations is not
+representative of California is the distribution of stations as a
+function of elevation.  Figure~\ref{fig:elevation} shows the
+difference in the distribution and range of the elevation, comparing
+the \ac{CIMIS} stations and California as a whole.  The station
+elevations under-represent the higher elevations in California.
+Because of this, extrapolating temperature measurements from CIMIS
+stations to regions with differing elevations is error prone.
+
+\begin{figure}
+  \centering
+  \figuremaybe{
+    \includegraphics[width=.5\textwidth]{Z.pdf}
+  }
+  \captionmaybe{Histograms of elevations for California from a
+    $(\unit[2]{km})^2$ digital elevation model and \ac{CIMIS}
+    stations.  }
+\label{fig:elevation}
+\end{figure}
+
+The \ac{RST} interpolation uses a simple lapse rate to normalize the
+temperatures from all stations to a standard elevation.  The
+measurements were normalized to sea level using a standard lapse rate
+of \unitfrac[5]{\ensuremath{^\circ}C}{km}.  A 2-D spline interpolation
+was fit to the normalized data.  The parameters to the \ac{RST}, were
+chosen with low tension and high smoothness resulting in a smooth
+interpolation over the normalized data.  The resulting values were
+then re-corrected by lapse rate along with elevation data for the
+state.  Figure~\ref{fig:rst} shows an example for temperatures
+calculated using this method.  The method predicts gradual changes in
+the normalized temperature, while maintaining strong elevation
+dependence of the temperature values.
+
+\begin{figure}[htbp]
+  \figuremaybe{
+    \mbox{
+      \subfigure[Normalized]{
+        \includegraphics[width=0.5\textwidth]{rst_norm}
+      } \quad
+      \subfigure[Elevation Corrected]{
+        \includegraphics[width=0.5\textwidth]{rst_el}
+      }
+    }
+  }
+  \captionmaybe{ RST interpolations from air temperatures on 2005/06/18 normalized to sea level, and the air temperature estimates after correcting for elevation.}
+%  \captionmaybe{ \acf{RST} interpolations from air temperatures on 2005/06/18 normalized to sea level, and the air temperature estimates after correcting for elevation.}
+  \label{fig:rst}
+\end{figure}
+
+A lapse rate of \unitfrac[5]{\ensuremath{^\circ}C}{km} was chosen for
+all temperature interpolations, \Tx, \Tn, and \dewp.  An examination
+of measured lapse rates between close stations, shows lapse rates for
+California vary widely.  Figure~\ref{fig:stations} shows three
+regions, labeled Sacramento, South Valley, and South Coast, with some
+moderate elevation differences between proximate stations.  To test
+the lapse rate within these regions, the difference in temperature
+versus the difference in elevation was calculated for all pairs of
+stations within each region, for each day in the three year time
+window.  Figure~\ref{fig:lapse-rate} shows these relationships and the
+calculated lapse rates for each region and temperature interpolation.
+Although the average lapse rate is about
+\unitfrac[5]{\ensuremath{^\circ}C}{km} for all air temperatures, the
+actual values vary widely between regions, with only \dewp\ showing
+any statewide stability.
+
+\begin{figure}
+  \figuremaybe{
+    \includegraphics[width=0.3\textwidth]{sacramento_max_at}
+    \includegraphics[width=0.3\textwidth]{sacramento_min_at} 
+    \includegraphics[width=0.3\textwidth]{sacramento_dewp}
+
+    \includegraphics[width=0.3\textwidth]{southcoast_max_at}
+    \includegraphics[width=0.3\textwidth]{southcoast_min_at} 
+    \includegraphics[width=0.3\textwidth]{southcoast_dewp}
+
+    \includegraphics[width=0.3\textwidth]{southvalley_max_at}
+    \includegraphics[width=0.3\textwidth]{southvalley_min_at} 
+    \includegraphics[width=0.3\textwidth]{southvalley_dewp}
+  }
+  \captionmaybe{Lapse rate measurements for three regions of California, for
+\Tx, \Tn\ and \dewp.
+}
+\label{fig:lapse-rate}
+\end{figure}
+
+Including seasonal differences compounds this confusion.
+Table~\ref{tab:lapse_rate} shows lapse rates for these regions
+averaged at monthly intervals.  In addition to regional differences,
+time-dependent changes in lapse rate are apparent.  While it is fairly
+easy to explain aspects of these results (for example, the diminishing
+effect of maritime influences in the South Coast region causing an
+inversion of lapse rates moving inland with higher elevations) it is
+clear that simple interpolations over a complex landscape can be only
+partially successful.
+
+\begin{table}
+    \centering
+    \captionmaybe{Average monthly surface temperature lapse rate measurements $[\unitfrac{\ensuremath{^\circ}C}{km}]$ for various California transects.
+    }
+    \figuremaybe{
+    \begin{tabular}{c | c c c | c c c | c c c }
+      & \multicolumn{3}{c|}{South Coast} & \multicolumn{3}{c|}{South Valley} & \multicolumn{3}{c}{Sacramento} \\
+      \raisebox{1.5ex}{Month} & \Tx & \Tn & \dewp & \Tx & \Tn  &\dewp & \Tx & \Tn & \dewp \\ \hline \hline
+      Jan& -3.34& -3.81& -9.44& 3.25& -7.29& -7.66& 0.20& -1.93& -4.93\\
+      Feb& -3.13& -3.68& -10.22& -3.93& -7.50& -6.48& -4.50& -2.29& -5.62\\
+      Mar& 0.46& -3.94& -7.58& -4.73& -10.39& -6.14& -5.54& -2.49& -5.49\\
+      Apr& -0.46& -3.97& -6.42& -4.67& -10.18& -5.59& -6.50& -2.84& -3.83\\
+      May& 4.15& -3.09& -6.52& -3.79& -10.69& -5.65& -6.48& -2.43& -3.58\\
+      Jun& 6.63& -5.31& -3.76& -3.63& -12.83& -5.09& -5.47& -1.27& -3.33\\
+      Jul& 10.36& -2.38& -4.63& -2.91& -13.02& -6.46& -3.53& 2.67& -4.94\\
+      Aug& 9.99& -2.02& -6.04& -3.23& -12.51& -5.45& -3.09& 2.38& -6.50\\
+      Sep& 6.22& -0.80& -7.30& -3.17& -11.39& -5.39& -4.08& 0.81& -6.97\\
+      Oct& 1.56& -1.68& -5.74& -3.53& -8.34& -6.69& -4.68& -0.33& -5.27\\
+      Nov& -2.20& -3.64& -9.45& -0.94& -6.87& -8.38& -2.64& -0.55& -4.56\\
+      Dec& -3.05& -3.23& -11.06& 1.62& -5.71& -8.43& -2.33& -1.74& -4.28\\
+\end{tabular}
+}
+\label{tab:lapse_rate}
+\end{table}
+
+Final temperature estimates were generated by averaging the
+results of \ac{TG} and \ac{RST} interpolations.  Figure~\ref{fig:T}
+shows a comparison of the two methods for a single day.
+
+\begin{figure}[htbp]
+  \figuremaybe{
+    \mbox{
+      \subfigure[2005/06/18 TG]{
+        \includegraphics[width=.5\textwidth]{dme}
+      }\quad
+      \subfigure[2005/06/18 RST]{
+        \includegraphics[width=.5\textwidth]{ns}
+      }
+    }
+  }
+   \captionmaybe{
+%
+     Example of temperature interpolation
+     comparing the \ac{TG} method and \ac{RST} 
+     for one day, 2005/06/18.
+%
+   }
+  \label{fig:T}
+\end{figure}
+
+Average daily wind speed measured at \unit[2]{m} height above the
+surface is used to compute the aerodynamic resistance, which
+represents a resistance to diffusion that air above the vegetative
+surface imposes on \ac{ET}. Average wind speed maps were generated
+using 3D \ac{RST}.  Figure~\ref{fig:ws} shows some example wind speed
+interpolations.  For these estimates, more flexible surfaces were fit.
+High winds reported from single stations cause anomalous effects
+in the interpolation around those points.  Another problem with wind
+speed interpolations is that only the speed and not wind
+direction is included in the interpolation model.
+
+\begin{figure}[htbp]
+  \figuremaybe{
+    \mbox{
+      \subfigure[2005/06/18]{
+        \includegraphics[width=.5\textwidth]{calm}
+      }\quad
+      \subfigure[2005/12/21]{
+        \includegraphics[width=.5\textwidth]{windy}
+      }
+    }
+  }
+  \captionmaybe{
+    Two typical wind speed interpolations, for a
+   windy (2005/06/18) and a calm (2005/12/21) day.
+ }
+  \label{fig:ws}
+\end{figure}
+
+\subsection{Radiation Models}
+\label{sec:radiation}
+
+Radiative inputs to the \ac{ASCE-ET} equation include the energy terms;
+\Rs\ and \Rnl.  Solar radiation can be measured directly or
+modeled. Longwave radiation is primarily a function of surface
+temperature, but is also affected by the daily average cloud cover and
+water vapor which affect the emissivity.
+
+\subsubsection{Solar Radiation, \Rs}
+
+Solar radiation is a linear term in the \ETo\ equation and in most
+cases in California is the driving factor in its calculation.
+Therefore it is important to measure this parameter accurately.
+\ac{CIMIS} stations measure solar radiation directly, but this
+parameter cannot be reliably interpolated spatially, since it is
+dependent on the daily cloud cover, which does not interpolate well
+from station data points.
+
+The method for the calculation of \Rs\ combines model predictions
+of clear sky radiation with hourly estimates of cloud cover using
+\ac{GOES} visible channel imager data.  This method for estimating
+solar radiation is independent of measurements at the \ac{CIMIS}
+stations.  The clear sky solar radiation model used is
+Heliosat-II~\citep{rigol.ea:00:on-clear,lefer.ea:02:descr-of}.
+
+For each location in California, the sunrise and sunset times are
+calculated each day.  Within the sunlit period, \ac{GOES} data are
+available for each hour, as shown in Figure~\ref{fig:radiation}.  The
+solar zenith angle for each hour are shown with solid lines.
+From each of these hourly \ac{GOES} images, a clear sky factor is
+calculated (Section~\ref{sec:cloud-brightn-clear}).  This factor is
+assumed constant over the intervals of time/sun angle shown with
+dotted lines.  Clear sky radiation is calculated for each of these
+intervals.  The clear sky radiation and clear sky factor are used to
+predict the actual radiation for each interval.  Finally, the
+contributions from all intervals are summed for the daily estimate of
+solar radiation.
+
+\begin{figure}[htbp]
+  \centering
+  \figuremaybe{
+    \resizebox{0.5\textwidth}{!}{\input{insolation.pdf.tex}}
+  }
+  \captionmaybe{
+%
+    Solar radiation calculations are performed on zenith intervals, using hourly cloud cover estimates. 
+%
+  }
+  \label{fig:radiation}
+\end{figure}
+
+The Heliosat-II model uses an analytical integration over solar angles
+and it is simple to change the frequency of the \ac{GOES} cloud cover
+estimates.  Missing cloud cover estimates, caused by lost \ac{GOES}
+images, are handled by extending the intervals adjacent to the missing
+times.  The analytical integration assigns appropriate weights to the
+remaining cloud cover estimates.
+
+Atmospheric transmission in the Heliosat-II model combines aspects of
+aerosols, relative humidity, ozone, and molecular scattering into a
+single parameter, the Linke turbidity, which relates the optical depth
+for an arbitrary atmosphere to an equivalent atmospheric depth of a
+Rayleigh-only scattering atmosphere.  Along with the sun's geometry
+and the elevation, the predicted radiation is calculated with this
+parameter.  Seasonal values of the Linke turbidity are derived from a
+world database of turbidity
+estimates~\citep{remund03world-linke-turbid-infor}.
+
+The percent difference in Heliosat-II compared to simpler solar
+radiation models such as that found in the FAO \ac{ET}
+guidelines~\citep{allen.ea:98:crop} range from -20\% to +6\%, though
+is generally about 6\% less than the FAO calculation.
+
+\subsubsection{Cloud Brightness and Clear Sky Factor, \K}
+\label{sec:cloud-brightn-clear}
+
+The \ac{GOES} imager data is used to calculate hourly estimates of
+cloud cover.  This is a relatively simple method which uses an
+empirical relation that is roughly a linear relation between measured
+cloud brightness with \K~\citep{beyer.ea:96:modif-of}.  This has
+been shown to be valid in a number of studies.
+
+Cloud brightness at time $i$, $n_i$ is defined as: \[n_i = \frac{V_i -
+  \rho_i}{BX_i - \rho_i}\] where $V_i$ is the visible imager channel
+value, $\rho_i$ is the surface albedo expressed in visible channel
+values, and $BX_i$ is the maximum expected pixel brightness, also
+expressed in visible channel values.  $n_i$ ranges from 0 with no
+clouds, to 1 with complete cloud cover.
+
+The surface albedo, $\rho_i$, is calculated for each pixel by taking
+the minimum measured value of $V_i$ over the previous two weeks.  This
+assumes that, at some point in that time frame, there were no clouds
+over that pixel.  The maximum pixel brightness $BX_i$ is calculated by
+taking the maximum value of \emph{any} pixel for that time in the
+previous 14 days.  To avoid single pixel anomalies, this value is
+taken on a 9x9 average of the visible image.  This results in choosing
+bright pixels that are part of a large cloudy region.
+
+Using these empirical methods for predicting $\rho_i$ and $BX_i$
+avoids some confounding land surface effects.  For example,
+differences due to changing solar view angles or seasonal changes in
+the surface are taken care of by the changing albedo values.  The
+calculation of the clear sky factor from cloud brightness is almost 1
+to 1:
+
+\begin{equation}
+  k_i= \begin{cases}
+    1.2 & n_i > 1.2 \\
+    n_i & 0.2 < n_i < 1.2 \\
+    5n_i^2/3+n_i/3 +1/15 & -0.1 < n_i < 0.2 \\
+    0.05 & n_i < -0.1 
+  \end{cases}
+\end{equation}
+
+With hourly estimates of the clear sky factor, $K_i$, and the modeled
+clear sky solar radiation ${\Rso}_i$, the daily solar radiation
+is simply the sum of hourly products, $\Rs=\sum_{i}
+K_i{\Rso}_i$.  From this, a daily clear sky factor is calculated.
+This parameter is used to influence energy exchange with the
+atmosphere in the calculation of emitted longwave radiation.  The
+daily clear sky factor, \K\ is defined as
+$K=\Rs/\Rso$.
+
+Figure~\ref{fig:Rs} shows a comparison of the predicted and measured
+daily solar radiation at the \ac{CIMIS} stations, from February 2003
+through April 2006.  The best fit correlation is nearly one-to-one
+when forcing the y-intercept through zero.  Allowing the best fit
+y-intercept, shows some indication that \ac{GOES} based estimates may
+over-predict radiation in low light levels, and under-predict
+radiation in very bright conditions.  This could imply that the
+function mapping cloud brightness to a clear sky factor should be
+re-evaluated.
+
+\begin{figure}[htbp]
+  \figuremaybe{
+    \includegraphics{Rs_R}
+  }
+  \captionmaybe{ A comparison of measured vs. \ac{GOES} estimated
+    radiation, for all \ac{CIMIS} stations over about 3 years.  }
+  \label{fig:Rs}
+\end{figure}
+
+The spatial distribution of errors for \Rs\ is not equal over all
+parts of California as shown in Figure~\ref{fig:errRns}.  The error is
+reported as the root mean squared error between the measurements and
+predictions.  As can be seen, the areas along the coastline and some
+desert regions have the largest errors.  Most of California shows
+significantly less difference between measured and predicted \Rs.
+
+\begin{figure}[htbp]
+  \figuremaybe{
+  \centering
+    \resizebox{0.5\textwidth}{!}{\input{rms.pdf.tex}}
+  }
+  \label{fig:errRns}
+  \captionmaybe{
+%
+    Percent difference between the \ac{CIMIS}
+    measurements and \ac{GOES} estimations of \Rs\ for California.
+%
+  }
+\end{figure}
+
+\subsubsection{Net Longwave Radiation, \Rnl}
+\label{sec:rnl}
+
+The daily net longwave radiation, \Rnl, is derived from the
+Stefan-Boltzmann law, with an estimation of the net emissivity based
+on water vapor.
+
+\begin{equation}
+   \Rnl = -(1.35K-0.35)(0.34-0.14\sqrt{e_a})\sigma\frac{(T_x+273.16)^4+(T_n+273.16)^4}{2}
+\end{equation}
+
+Most of these values are based on interpolated values with the
+exception of \K.  \ac{CIMIS} estimates cloud cover as a ratio
+between the measured solar radiation and predicted clear sky
+radiation; similar to the clear sky factor described in
+Section~\ref{sec:cloud-brightn-clear}, but with a different clear sky
+radiation model.  Figure~\ref{fig:Rlw} shows the difference between
+\ac{CIMIS} \Rnl\ and \Rnl\ using \ac{GOES} estimated \K\
+factors.  As in the \Rs\ comparison, the \ac{GOES} method
+over-predicts \Rnl\ in the cloudy regions and under-predicts in the
+clear regions.  Why this is more pronounced in the \Rnl\ comparison
+might be because of the difference in the calculation of the cloud
+factor, \K.  Since clear sky radiation is not a measured value at
+the \ac{CIMIS} stations, it is unclear which estimation is more
+accurate.
+        
+\begin{figure}[htbp]
+  \figuremaybe{
+    \includegraphics{Rnl_R}
+  }
+  \captionmaybe{
+%
+    \ac{GOES} based estimates of \Rnl\ compared to \ac{CIMIS}
+    ground station estimates.
+%
+  }
+  \label{fig:Rlw}
+\end{figure}
+
+\subsection{Winter Net Radiation Estimation Problems}
+
+Two winter phenomena in California adversely affected the
+net radiation predictions on certain occasions.  These phenomena
+are snowfall and persistent fog, both common occurrences in
+California.  Both problems lead to inaccurate estimations of surface
+albedo, which lead to inaccurate estimations of cloud cover, which
+lead to inaccurate estimations of net radiation.  In the case of
+snowfall, the current method compares snowfall to the previous albedo
+and perceives freshly fallen snow as cloud cover, resulting in over
+predicting clouds and under predicting net radiation.  In the case of
+persistent fog, a 14 day region of continuous fog will cause a large
+over prediction of albedo, and subsequently will under predict cloud
+cover and over predict net radiation for cloud covered regions.
+
+A modification to the existing model, including adding additional
+\ac{GOES} imager channels to differentiate between cloud and snow, and
+fog and surface is being planned.
+
+\section{Measurement Uncertainty}
+\label{sec:meas-uncert}
+
+The \ETo\ model provides a single \ETo\ value per pixel.  To
+support the use the output it is necessary to provide some information
+about the reliability of the predictions.  For our model,
+interpolated data presents problems of under sampling and poorly
+distributed weather stations, while satellite imagery presents
+problems with the method of retrieval and derivation used.
+
+To estimate uncertainty, Monte Carlo simulations are run on the daily
+estimations.  Normally distributed errors are associated with each
+input parameter to the \ETo\ calculation, for each pixel in the
+image.  Because of the proximity of \ac{CIMIS} stations, elevation
+differences, and other spatially varying considerations, the errors
+for each parameter vary across the image.  Table~\ref{tab:errors}
+summarizes the standard deviation used for each parameter.  Here, the
+difference of the two estimations for temperatures are used to
+set error bounds on \Tn, \Tx, \dewp, and,
+indirectly, \ea\ and \es.  The radiation parameter errors are
+modeled as percentages of the radiation values.  \Rs, especially,
+has a higher error than the comparison to the \ac{CIMIS} data suggest,
+but was increased to simulate differences in calculations of \Rso\ 
+as mentioned in Section~\ref{sec:radiation}.  Wind speed, \U,
+errors were estimated.
+
+\begin{table}
+    \centering
+    \captionmaybe{Error contributions}
+    \figuremaybe{
+    \begin{tabular}{l|c|l}
+      Parameter & Std. Dev. & Description \\
+      \hline \hline
+      \Tx & $\sqrt{2}|\Delta(\Tx)|$ & $\Delta(\Tx)$ is difference in interpolations \\
+      \Tn & $\sqrt{2}|\Delta(\Tn)|$ & $\Delta(\Tn)$ is difference in interpolations \\
+      \dewp & $\sqrt{2}|\Delta(\dewp)|$ & $\Delta(\dewp)$ is difference in interpolations \\
+      \ea & $\sqrt{2}|\Delta(\es)|$ & $\Delta(\ea)$ is difference in interpolations \\
+      \Rs & 0.15*\Rs & Estimated from different \Rs calculations \\
+      \Rnl & 0.15*\Rnl & Estimated from different \Rnl calculations \\
+      \U & 0.25*\U & Estimated \\
+    \end{tabular}
+}
+    \label{tab:errors}
+\end{table}
+
+For each day, standard deviation maps are computed for every
+parameter.  For each parameter, an image of random Gaussian
+distributed errors with mean 0 and standard deviation 1 is calculated
+and multiplied with the parameter's standard deviation map.  The
+resultant errors are added to the estimated values for each parameter,
+and \ETo\ is calculated.  This is carried out for a number of error
+maps.  The variance of the calculated \ETo\ estimations can then be
+used as an estimate to the error associated with the \ETo\ 
+prediction.
+
+Because of computing limitations, only 10 separate Monte-Carlo runs
+are performed per day.  This number is low enough that the resultant
+maps of predicted error in the \ETo\ calculations shows
+randomization patterns and are speckled.  To improve the output, the
+error map is run through a 3x3 averaging filter.  In a sense, this
+creates a pseudo error map of 90 Monte-Carlo runs, and eliminates the
+random patterns.
+
+Figure~\ref{fig:error-map} shows the average error estimates of
+uncertainty for \ETo\ as isolines on the average \ETo\ values.
+This is for the month of August, 2005.
+
+\begin{figure}
+  \figuremaybe{
+    \centering
+    \includegraphics[width=.5\textwidth]{errors}
+  }
+  \captionmaybe{Estimated \ETo\ error for 2005-08.  Raster colors indicate estimated \ETo, and isolines show error estimates with labels in \unit{mm}.}
+  \label{fig:error-map}
+\end{figure}
+
+Uncertainty analysis is run every day to estimate spatial uncertainty
+of the results.  However, these estimates can be misleading in
+certain cases, for example, the error estimation for the temperature
+parameters assumes there is no bias in the two interpolation methods.
+This has not been validated.
+
+\section{Conclusions}
+
+\ac{ET} is an important indicator in both agricultural and urban
+settings and can address water needs for a variety of water issues,
+such as irrigation scheduling.
+
+We have demonstrated a method of creating daily \ETo\ maps
+for California using satellite and ground station data.  The current
+method provides good estimates of \ETo\ and will be incorporated in
+the \acl{CIMIS} program, providing users access to spatial
+distributions of \ETo.  The model has been used with \ac{GOES} and
+\ac{CIMIS} data for approximately three years, since February, 2003.
+
+Net radiation models combined with \ac{GOES} estimates of cloud cover
+is an effective method of obtaining spatial estimations of solar
+radiation.  Some events like snowfall and persistent fog, lead to
+erroneous cloud cover predictions.  Including additional \ac{GOES}
+channels to detect these events is an important next step.
+
+Variations in the temperature distributions throughout California are
+caused by multiple forces and can be difficult to model completely
+with interpolation methods alone, especially in regions where stations
+are sparse.  One possibility being investigated will use weather
+prediction models, run at small time scales, and periodically modified
+by near real-time hourly data from weather stations to more accurately
+model the spatial variability of surface parameters.
+
+Monte-Carlo methods can be used on spatial calculations to understand
+more accurately what the impact of uncertainties in parameter
+estimations can have on final model outputs.
+
+
+%\bibliographystyle{elsart-harv}
+%\bibliography{../cimis}
+
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Allen et~al.(1998)Allen, Pereira, Raes, and Smith}]{allen.ea:98:crop}
+Allen, R.~G., Pereira, L.~S., Raes, D., Smith, M., 1998. Crop
+  evapotranspiration : guidelines for computing crop water requirements. FAO
+  irrigation and drainage paper~56, Food and Agriculture Organization of the
+  United Nations, Rome.
+
+\bibitem[{Beyer et~al.(1996)Beyer, Costanzo, and
+  Heinmann}]{beyer.ea:96:modif-of}
+Beyer, H., Costanzo, C., Heinmann, D., 1996. Modifications of the {H}eliosat
+  procedure for irradiance estimates from satellite images. Solar Energy
+  56~(3), 207--212.
+
+\bibitem[{{GRASS Development Team}(2006)}]{GRASS_GIS_software}
+{GRASS Development Team}, 2006. Geographic Resources Analysis Support System
+  (GRASS GIS) Software. ITC-irst, Trento, Italy.
+
+\bibitem[{Leferve et~al.(2002)Leferve, Aluisson, and
+  Wald}]{lefer.ea:02:descr-of}
+Leferve, M., Aluisson, M., Wald, L., November 2002. Description of the software
+  {H}eliosat-{II} for the conversion of images acquired be meteosat satellites
+  in the visible band into maps of solar radiation available at ground level.
+  Tech. rep., Ecole Des Mines De Paris.
+
+\bibitem[{Mitasova et~al.(1995)Mitasova, Mitas, Brown, Gerdes, Kosinovsky, and
+  Baker}]{mitasova.ea:95:rstgrass}
+Mitasova, H., Mitas, L., Brown, W., Gerdes, D., Kosinovsky, I., Baker, T.,
+  1995. Modeling spatially and temporally distributed phenomena: new methods
+  and tools for {GRASS} {GIS}. International Journal of Geographical
+  Information Systems 9(4), 433--446.
+
+\bibitem[{Neteler and Mitasova(2004)}]{neteler04open-sourc-gis}
+Neteler, M., Mitasova, H., 2004. Open Source GIS: A GRASS GIS Approach, 2nd
+  Edition. Springer, Boston.
+
+\bibitem[{Peter E.~Thornton and White(1997)}]{thornton.ea:97:daymet}
+Peter E.~Thornton, S. W.~R., White, M.~A., March 1997. Generating surfaces of
+  daily meteorological variables over large regions of complex terrain. Journal
+  of Hydrology 190, 214--251.
+
+\bibitem[{Remund et~al.(2003)Remund, Wald, Lefevre, Ranchin, and
+  Page}]{remund03world-linke-turbid-infor}
+Remund, J., Wald, L., Lefevre, M., Ranchin, T., Page, J., June 2003. Worldwide
+  linke turbidity information. In: Proceedings of ISES Solar World Congress.
+  Göteborg, Sweden.
+
+\bibitem[{Rigollier et~al.(2000)Rigollier, Bauer, and
+  Wald}]{rigol.ea:00:on-clear}
+Rigollier, C., Bauer, O., Wald, L., 2000. On the clear sky model of {ESRA} --
+  {E}uorpean {S}olar {R}adiation {A}tlas-- with respect to the heliosat method.
+  Solar Energy 68~(1), 33--48.
+
+\bibitem[{Walter et~al.(2000)Walter, Allen, Elliott, Jensen, Howell, Snyder,
+  Brown, Echings, Spofford, and Wright}]{walter00stand-refer}
+Walter, I., Allen, R., Elliott, R., Jensen, M., Howell, T., Snyder, R., Brown,
+  P., Echings, S., Spofford, T., Wright, J., June 2000. {ASCE}'s standardized
+  reference evapotranspiration equation. In: American Society Of Civil
+  Engineers Watershed Management Conference.
+
+
+\end{thebibliography}
+\pagestyle{empty}
+\end{document}
+
+
+% LocalWords:  evapotranspiration albedo irradiance imager snowpack snowmelt streamflow CIMIS FAO
+% LocalWords:  stomata micrometeorological Monteith emissitivity Linke isolines
+% LocalWords:  psychrometric Heliosat turbidity sigmoidal longwave DayMet

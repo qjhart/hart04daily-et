@@ -1,0 +1,153 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{qjh-article}
+\renewcommand{\familydefault}{cmss}
+
+\newcommand{\hel}{Heliosat}
+
+\title{Daily Evapotranspiration - Radiation Model} 
+\author{Quinn Hart qjhart@ucdavis.edu}
+
+\date{Apr 2003}
+
+\abstract{  
+  This document gives a brief description of the solar radiation
+  model, the choice of model, and some justification of the model.  We
+  have begun with a model that is a combination of model
+  \hel-I~\cite{beyer.ea:96:modif-of} and
+  \hel-II~\cite{rigol.ea:00:on-clear,lefer.ea:02:descr-of} This paper
+  is a comparison of the differences between these models and the
+  2001~\cite{gauti.ea:97:surfa-solar,froui.ea:89:simpl-analy} model.
+}
+\begin{document}
+
+\maketitle
+
+\section{Solar Radiation Model}
+
+The \hel-I model used a simple solar irradiance prediction model
+coupled with cloudiness parameters based on ratios of visible pixels
+from the Satellite.  The \hel-II model updates the solar radiation
+model and also determines surface albedos by modeling the diffuse
+radiance, and transmission of the atmosphere.  The 2001 model is a
+simple model that describes a one layer atmospheric model.  Ground and
+cloud albedos are calculated from this model and then used to predict
+the surface insolation.
+
+We have chosen to implement the radiative transfer from the \hel-II
+model, while retaining the ratio based approach of albedos to
+determine the cloudiness factors and their contribution to the solar
+insolation.
+
+In the future, we plan to include both the \hel-II albedo estimations,
+as well as compare insolation predictions from the 2001 model.  The
+following describes some of the main differences between the \hel based
+models and the 2001 model.
+
+\begin{description}
+
+\item[Basic Radiative Model] 
+  
+  The Heliosat model basically combines aspects of aerosols, relative
+  humidity, ozone, and molecular scattering into a single parameter,
+  the Linke turbidity, $T_l$, which relates the optical depth for an
+  arbitrary atmosphere to one of a Rayleigh only scattering
+  atmosphere.  Then, besides geometry, elevation, and some second
+  order effects, the predicted insolation is a simple calculation
+  using this parameter.  For example, the direct beam calculation is
+  $G_direct ~ e^{-0.8662t_l(p/p_0)\gamma_r}$ where $T_l$ is the Linke
+  turbidity factor, $p/p_0$ is a elevation correction, and $\gamma_R$
+  is the rayleigh optical depth.  We have seasonal estimations of the
+  Linke turbidity from a world database of this information.
+  
+  The 2001 model on the other hand, uses six parameters to estimate
+  the atmospheric effects.
+  
+  The \hel model's simplicity allows use an easier formulation for
+  modeling predicted changes in radiation.  For example, we can use
+  the seasonal model of Linke turbidity, but potentially make spatial
+  changes to this estimation by comparing to the CIMIS radiation
+  measurements.
+  
+  One potential problem with using a model based on the Linke
+  Turbidity is that it could conceivably be more difficult to tie the
+  Linke Turbidity to the CIMIS based relative humidity measurements,
+  which is another possible way to estimate the turbidity.
+  
+\item[Integration] 
+ 
+  The \hel-II model uses an analytical integration over solar angles,
+  as opposed to other models which use approximations over
+  instantaneous values.  This has a number of advantages.  The largest
+  is in filling gaps caused by missing datasets.  If for example, we
+  have GOES satellite measurements from 9,11 am, we can simply fill in
+  the missing 10 am value by extending the range of the other
+  measurements.  Using an analytical integration will assign the
+  proper weights to the bounding measurements, in this case assigning
+  a greater weight to the measurement at 11.
+  
+  Even if we decide to use a different radiative transfer model, we
+  can still take advantage of the integration methods developed here,
+  although the integration functions are related directly to
+  formulation of the radiation as described in the heliosat model.
+
+
+\item[Diffuse Radiation]
+  
+  The 2001 model uses a simple model that basically combines direct
+  and diffuse radiance
+
+
+\item[Cloud Cover] 
+  
+  One of the major differences between the Heliosat based model, and
+  the 2001 model is in the calculation of the effects of cloud cover.
+  The heliosat model uses an empirical relation that roughly linearly
+  relates a measured cloud brightness with the clear-sky fraction.
+  This empirical relation has been shown to be valid in a number of
+  studies~\cite{beyer.ea:96:modif-of}. The 2001 model instead uses a
+  simple cloud model formulation to determine cloud albedo from pixel
+  brightness.  This results in a quadratic functional relationship
+  between cloud brightness and downwelling radiance.  Since the clear
+  sky \hel2 model does not include cloud cover, we could compare these
+  models at a later date.
+
+
+\item[Albedos] 
+  
+  One potential advantage of the 2001 model is that the model predicts
+  absolute albedo values, whereas the \hel1 model uses relative
+  brightness comparisons.  We would like to compare the \hel1 and
+  \hel2 model formulations, and at that point, we could calculate
+  absolute albedos with
+
+\end{description}
+
+\subsection{Comparisons}
+
+If we would like to compare the \hel model with the 2001 model, we
+would follow the following steps.  
+
+\begin{itemize}
+  
+\item Calculate true surface albedos using scattering and absorption
+  cooeficients based either on the \hel2 method or 2001 method. 
+  
+\item Compute cloud albedo using the 2001 model.  As discussed above,
+  this is a quadratic equation that usually has a simple empirical
+  formula for the cloud absorption.
+  
+\item Using the computed cloud albedo, and the 2001 cloud model,
+  compute the 2001 predicted surface radiance.  
+  
+\item Compare the two predicted radiance values to determine where the
+  models differ, and using the CIMIS stations as an estimator of
+  accuracy.
+
+\end{itemize}
+
+
+\bibliographystyle{alpha}
+\bibliography{cimis}
+
+\end{document}

@@ -1,0 +1,8 @@
+% texexec.top
+\unprotect
+\setupsystem[file=tab_3]
+\setupoutput[pdftex]
+\setupsystem[\c!directory={/home/quinn/}]
+\setupsystem[\c!n=3]
+\setupsystem[inputfile=texexec.tex]
+\protect

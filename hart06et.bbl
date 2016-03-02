@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Allen et~al.(1998)Allen, Pereira, Raes, and Smith}]{allen.ea:98:crop}
+Allen, R.~G., Pereira, L.~S., Raes, D., Smith, M., 1998. Crop
+  evapotranspiration : guidelines for computing crop water requirements. FAO
+  irrigation and drainage paper~56, Food and Agriculture Organization of the
+  United Nations, Rome.
+\newline\urlprefix\url{http://www.fao.org/docrep/X0490E/x0490e00.htm}
+
+\bibitem[{Beyer et~al.(1996)Beyer, Costanzo, and
+  Heinmann}]{beyer.ea:96:modif-of}
+Beyer, H., Costanzo, C., Heinmann, D., 1996. Modifications of the {H}eliosat
+  procedure for irradiance estimates from satellite images. Solar Energy
+  56~(3), 207--212.
+
+\bibitem[{{GRASS Development Team}(2006)}]{GRASS_GIS_software}
+{GRASS Development Team}, 2006. Geographic Resources Analysis Support System
+  (GRASS GIS) Software. ITC-irst, Trento, Italy.
+\newline\urlprefix\url{http://grass.itc.it}
+
+\bibitem[{Leferve et~al.(2002)Leferve, Aluisson, and
+  Wald}]{lefer.ea:02:descr-of}
+Leferve, M., Aluisson, M., Wald, L., November 2002. Description of the software
+  {H}eliosat-{II} for the conversion of images acquired be meteosat satellites
+  in the visible band into maps of solar radiation available at ground level.
+  Tech. rep., Ecole Des Mines De Paris.
+\newline\urlprefix\url{http://www.heliolim.org/heliosat}
+
+\bibitem[{Mitasova et~al.(1995)Mitasova, Mitas, Brown, Gerdes, Kosinovsky, and
+  Baker}]{mitasova.ea:95:rstgrass}
+Mitasova, H., Mitas, L., Brown, W., Gerdes, D., Kosinovsky, I., Baker, T.,
+  1995. Modeling spatially and temporally distributed phenomena: new methods
+  and tools for {GRASS} {GIS}. International Journal of Geographical
+  Information Systems 9(4), 433--446.
+
+\bibitem[{Neteler and Mitasova(2004)}]{neteler04open-sourc-gis}
+Neteler, M., Mitasova, H., 2004. Open Source GIS: A GRASS GIS Approach, 2nd
+  Edition. Springer, Boston.
+
+\bibitem[{Peter E.~Thornton and White(1997)}]{thornton.ea:97:daymet}
+Peter E.~Thornton, S. W.~R., White, M.~A., March 1997. Generating surfaces of
+  daily meteorological variables over large regions of complex terrain. Journal
+  of Hydrology 190, 214--251.
+
+\bibitem[{Remund et~al.(2003)Remund, Wald, Lefevre, Ranchin, and
+  Page}]{remund03world-linke-turbid-infor}
+Remund, J., Wald, L., Lefevre, M., Ranchin, T., Page, J., June 2003. Worldwide
+  linke turbidity information. In: Proceedings of ISES Solar World Congress.
+  Göteborg, Sweden.
+\newline\urlprefix\url{http://www.helioclim.net/publications/ises2003_linke.pd%
+f}
+
+\bibitem[{Rigollier et~al.(2000)Rigollier, Bauer, and
+  Wald}]{rigol.ea:00:on-clear}
+Rigollier, C., Bauer, O., Wald, L., 2000. On the clear sky model of {ESRA} --
+  {E}uorpean {S}olar {R}adiation {A}tlas-- with respect to the heliosat method.
+  Solar Energy 68~(1), 33--48.
+
+\bibitem[{Walter et~al.(2000)Walter, Allen, Elliott, Jensen, Howell, Snyder,
+  Brown, Echings, Spofford, and Wright}]{walter00stand-refer}
+Walter, I., Allen, R., Elliott, R., Jensen, M., Howell, T., Snyder, R., Brown,
+  P., Echings, S., Spofford, T., Wright, J., June 2000. {ASCE}'s standardized
+  reference evapotranspiration equation. In: American Society Of Civil
+  Engineers Watershed Management Conference. p.~11.
+
+\end{thebibliography}
